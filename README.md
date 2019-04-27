@@ -8,7 +8,7 @@
 
 ### 1.1M0M1系列(WI6800)
 
-AT指令固件版本更新详情参考 `AT+HTTP+MQTT多合一固件版本更新说明：</WIFI/M0M1_WI6800/AT/README.md>`
+AT指令固件版本更新详情参考:[AT+HTTP+MQTT多合一固件版本更新说明](/WIFI/M0M1_WI6800/AT/README.md)
 
 ## 联系我们
 
