@@ -4,7 +4,7 @@
 
 ## 1.WIFI项目
 
-WIFI部分相应使用方法：[点击查看](https://blog.csdn.net/mqlinks)
+**WIFI部分相应使用方法：[点击查看](https://blog.csdn.net/mqlinks)**
 
 ### 1.1 M0M1系列(WI6800)
 
