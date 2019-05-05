@@ -18,7 +18,7 @@ AT+HTTP+MQTT多合一固件版本更新说明:[点击查看](/WIFI/M0M1_WI6800/A
 
 M0E1系列模组数据手册:[点击查看](/WIFI/M0E1_ESP8266/datasheet)
 
-AT透传MQTT固件更新说明：[点击查看](/WIFI/M0M1_ESP8266/MQTT/README.md)
+AT透传MQTT固件更新说明：[点击查看](/WIFI/M0E1_ESP8266/MQTT/README.md)
 
 ESP8266官文档整理:[点击查看](/WIFI/M0E1_ESP8266/doc)
 
