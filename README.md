@@ -12,6 +12,8 @@ M0M1系列模组数据手册:[点击查看](/WIFI/M0M1_WI6800/datasheet)
 
 AT+HTTP+MQTT多合一固件版本更新说明:[点击查看](/WIFI/M0M1_WI6800/AT/README.md)
 
+模组封装：[点击查看](/WIFI/M0M1_WI6800/package)
+
 相关工具下载:[点击查看](/WIFI/M0M1_WI6800/tools)
 
 ### 2.1 M0E1系列(ESP8266)
@@ -23,6 +25,8 @@ AT透传MQTT固件更新说明：[点击查看](/WIFI/M0E1_ESP8266/MQTT/README.m
 ESP8266官文档整理:[点击查看](/WIFI/M0E1_ESP8266/doc)
 
 相关工具下载:[点击查看](/WIFI/M0E1_ESP8266/tools)
+
+模组封装：[点击查看](/WIFI/M0E1_ESP8266/package)
 
 劢领智能ESP8266_RTOS_SDK:[点击查看](https://github.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
 
