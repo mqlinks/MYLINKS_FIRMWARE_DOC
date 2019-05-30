@@ -32,6 +32,8 @@ ESP8266官文档整理:[点击查看](/WIFI/M0E1_ESP8266/doc)
 
 模组PCB封装：[点击查看](/WIFI/M0E1_ESP8266/package)
 
+相关原理图：[点击查看](/WIFI/M0E1_ESP8266/schematic)
+
 认证证书：[点击查看](/WIFI/M0E1_ESP8266/cert)
 
 劢领智能ESP8266_RTOS_SDK:[点击查看](https://github.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
