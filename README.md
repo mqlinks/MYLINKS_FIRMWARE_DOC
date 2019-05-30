@@ -36,7 +36,7 @@ ESP8266官文档整理:[点击查看](/WIFI/M0E1_ESP8266/doc)
 
 认证证书：[点击查看](/WIFI/M0E1_ESP8266/cert)
 
-劢领智能ESP8266_RTOS_SDK:[点击查看](https://github.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
+劢领智能ESP8266_RTOS_SDK:[点击查看](https://gitee.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
 
 ## 联系我们
 
