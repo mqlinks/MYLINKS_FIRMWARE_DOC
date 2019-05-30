@@ -26,12 +26,18 @@ ESP8266官文档整理:[点击查看](/WIFI/M0E1_ESP8266/doc)
 
 相关工具下载:[点击查看](/WIFI/M0E1_ESP8266/tools)
 
-模组封装：[点击查看](/WIFI/M0E1_ESP8266/package)
+模组PCB封装：[点击查看](/WIFI/M0E1_ESP8266/package)
+
+认证证书：[点击查看](/WIFI/M0E1_ESP8266/cert)
 
 劢领智能ESP8266_RTOS_SDK:[点击查看](https://github.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
 
 ## 联系我们
 
 技术邮箱: support@mqlinks.com
+
 技术热线：0573-8261005
+
 公司地址：浙江省嘉兴市中环北路1856号301室
+
+企业店铺：shop.mqlinks.com
