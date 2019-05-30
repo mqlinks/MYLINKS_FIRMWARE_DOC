@@ -40,4 +40,4 @@ ESP8266官文档整理:[点击查看](/WIFI/M0E1_ESP8266/doc)
 
 公司地址：浙江省嘉兴市中环北路1856号301室
 
-企业店铺：[shop.mqlinks.com](https://shop.mqlinks.com)
+企业店铺：[shop.mqlinks.com](http://shop.mqlinks.com)
