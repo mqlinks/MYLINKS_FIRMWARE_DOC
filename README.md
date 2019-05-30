@@ -12,7 +12,11 @@ M0M1系列模组数据手册:[点击查看](/WIFI/M0M1_WI6800/datasheet)
 
 AT+HTTP+MQTT多合一固件版本更新说明:[点击查看](/WIFI/M0M1_WI6800/AT/README.md)
 
-模组封装：[点击查看](/WIFI/M0M1_WI6800/package)
+模组PCB封装：[点击查看](/WIFI/M0M1_WI6800/package)
+
+相关原理图：[点击查看](/WIFI/M0M1_WI6800/schematic)
+
+相关认证：[点击查看](/WIFI/M0M1_WI6800/cert)
 
 相关工具下载:[点击查看](/WIFI/M0M1_WI6800/tools)
 
