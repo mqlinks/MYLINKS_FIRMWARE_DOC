@@ -20,7 +20,7 @@ AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/AT)
 
 相关工具下载:[点击查看](https://share.weiyun.com/5cwCA7V)
 
-### 2.1 M0E1系列(ESP8266)
+### 1.2 M0E1系列(ESP8266)
 
 M0E1系列模组数据手册:[点击查看](https://share.weiyun.com/5kEkc6Q)
 
@@ -37,6 +37,15 @@ ESP8266官文档整理:[点击查看](https://share.weiyun.com/54gLeAb)
 认证证书：[点击查看](https://share.weiyun.com/5pgXoTl)
 
 劢领智能ESP8266_RTOS_SDK:[点击查看](https://gitee.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
+
+手机SMARTCONFIG代码:[IOS](https://github.com/EspressifApp/EsptouchForIOS)[Android](https://github.com/EspressifApp/EsptouchForAndroid)
+
+### 1.3 其它工具
+
+电脑端MQTT工具:[点击查看](https://share.weiyun.com/5H6Xqws)
+
+
+
 
 ## 联系我们
 
