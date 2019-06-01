@@ -38,7 +38,7 @@ ESP8266官文档整理:[点击查看](https://share.weiyun.com/54gLeAb)
 
 劢领智能ESP8266_RTOS_SDK:[点击查看](https://gitee.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
 
-手机SMARTCONFIG代码:[IOS](https://github.com/EspressifApp/EsptouchForIOS)[Android](https://github.com/EspressifApp/EsptouchForAndroid)
+手机SMARTCONFIG代码:[IOS](https://github.com/EspressifApp/EsptouchForIOS) | [Android](https://github.com/EspressifApp/EsptouchForAndroid)
 
 ### 1.3 其它工具
 
