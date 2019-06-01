@@ -8,17 +8,17 @@
 
 ### 1.1 M0M1系列(WI6800)
 
-M0M1系列模组数据手册:[点击查看](/WIFI/M0M1_WI6800/datasheet)
+M0M1系列模组数据手册:[点击查看](https://share.weiyun.com/59yfp5N)
 
-AT+HTTP+MQTT多合一固件版本更新说明:[点击查看](/WIFI/M0M1_WI6800/AT/README.md)
+AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/AT)
 
-模组PCB封装：[点击查看](/WIFI/M0M1_WI6800/package)
+模组PCB封装：[点击查看](https://share.weiyun.com/5ceV1OJ)
 
-相关原理图：[点击查看](/WIFI/M0M1_WI6800/schematic)
+相关原理图：[点击查看](https://share.weiyun.com/53I131Q)
 
-相关认证：[点击查看](/WIFI/M0M1_WI6800/cert)
+相关认证：[点击查看](https://share.weiyun.com/5fOMFyV)
 
-相关工具下载:[点击查看](/WIFI/M0M1_WI6800/tools)
+相关工具下载:[点击查看](https://share.weiyun.com/5cwCA7V)
 
 ### 2.1 M0E1系列(ESP8266)
 
