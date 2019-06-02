@@ -20,6 +20,8 @@ AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/AT)
 
 相关工具下载:[点击查看](https://share.weiyun.com/5cwCA7V)
 
+劢领智能M88WI6800K_V2.3:[点击查看](https://gitee.com/mqlinks/MYLINKS_M88WI6800K_V2.3)
+
 ### 1.2 M0E1系列(ESP8266)
 
 M0E1系列模组数据手册:[点击查看](https://share.weiyun.com/5kEkc6Q)
