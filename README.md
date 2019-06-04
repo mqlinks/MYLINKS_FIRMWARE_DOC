@@ -46,6 +46,7 @@ ESP8266官文档整理:[点击查看](https://share.weiyun.com/54gLeAb)
 
 电脑端MQTT工具:[点击查看](https://share.weiyun.com/5H6Xqws)
 
+电脑端调试工具:[点击查看](https://share.weiyun.com/5WFd0fc)
 
 
 
