@@ -1,0 +1,4215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<title>ËÆæÁΩÆ</title>
+<script type="text/javascript">
+function mouseover(c)
+{
+    c.style.textDecoration = "underline"
+}
+function mouseout(c)
+{
+    c.style.textDecoration = "none";
+}
+var sel = 1;
+function child_cn(v)
+{
+    opt_sel(v);
+    initDiv(v,"cn");
+}
+function opt_sel(v)
+{
+    document.getElementById("op_"+sel).className = "opt_no";
+    document.getElementById("op_"+v).className = "opt_sel";
+    sel = v;
+}
+function initDiv(v,lan)
+{
+    var child = document.getElementById("child_page");
+    child.src = getUrl(v,lan);
+    switch(v){
+    	case 1:
+    	child_height(500);
+    	break;
+    	case 2:
+    	child_height(500);
+    	break;
+    	case 3:
+    	child_height(500);
+    	break;
+    	case 4:
+    	child_height(500);
+    	break;
+    	case 5:
+    	child_height(500);
+    	break;
+    	default:
+    	child_height(500);
+    	break;
+    }
+}
+function getUrl(v,lan)
+{
+    var end = "_en.html";
+    if(lan == "cn")
+    {
+        end = "_cn.html";
+    }
+    switch(v)
+    {
+        case 1:return "status"+end;break;
+        case 2:return "select"+end;break;
+        case 3:return "wireless"+end;break;
+        case 4:return "wirepoint"+end;break;
+        case 5:return "port"+end;break;
+        case 6:return "account"+end;break;
+        case 7:return "update"+end;break;
+        case 8:return "restart"+end;break;
+        case 9:return "reset"+end;break;
+    }
+}
+function underline(c,v)
+{
+    if(v == 1)
+    {
+        c.style.textDecoration = "underline";
+    }
+    if(v == 2)
+    {
+        c.style.textDecoration = "none";
+    }
+}
+function child_height(v)
+{
+	var child = document.getElementById("child_page");
+	if(child != null)
+	{
+		child.style.height = v+"px";
+	}
+}
+
+</script>
+<style>
+.lan
+{
+	cursor:pointer;
+	text-decoration:none;
+	color:#0163AC;
+	font-size:12px;
+	margin-left:3px;
+}
+.font_en
+{
+	font-family:Arial;
+}
+.lan_r
+{
+	margin-right:5px;
+}
+.opt_sel
+{
+	height:30px;
+	background-color:#006699;
+	padding-left:25px;
+	color:White;
+	cursor:pointer;
+}
+.opt_no
+{
+	height:30px;
+	padding-left:25px;
+	cursor:pointer;
+	color:#757475;
+}
+.opt_cn
+{
+	padding-top:4px;
+	font-size:18px;
+}
+.shadow
+{
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);/*ie*/ 
+	-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/ 
+	-webkit-box-shadow: 2px 2px 10px #909090;/*safariÊàñchrome*/ 
+	box-shadow:2px 2px 10px #909090;/*operaÊàñie9*/ 
+}
+.back_div
+{
+	width:600px;
+	float:left;
+	background:scroll center center;
+	background-color:#006699;
+	margin-top:10px;
+	border-radius:20px 20px 20px 20px;
+}
+.cl
+{
+	clear:left;
+}
+.sp_20
+{
+	width:10px;
+	height:20px;	
+}
+.sp_80
+{
+	width:10px;
+	height:80px;	
+}
+.bot_txt
+{
+	font-family:Arial;
+	font-size:14px;
+	text-align:center;
+	color:#757475;
+}
+</style>
+</head>
+
+<body style="background-color:#F5F5F5" onload="child_cn(1)">
+	<div style="width:900px;margin-left:auto;margin-right:auto;margin-top:15px;font-family:ÂæÆËΩØÈõÖÈªë">
+		<iframe  width="0px" height="0px" id="lang_iframe_id" style="border-style:none"></iframe>
+	    <div style="width:50%;float:left;height:42px"></div>		
+	    <div style="width:50%;float:left;height:22px;margin-top:16px;text-align:center;">
+		<a class="lan lan_r" style="font-family:ÂæÆËΩØÈõÖÈªë">‰∏≠Êñá</a>
+		<font style="font-size: 12px;color: #0163AC">|</font>
+		<a href="index_en.html" class="lan font_en" onmouseover="mouseover(this)" onmouseout="mouseout(this)">English</a>
+		</div>		
+	    <div class="cl"></div>		
+	    <div style="width:140px;float:left;" >
+	        <div class="sp_80"></div>
+	        <div id="op_1" class="opt_sel" onclick="child_cn(1)" onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Á≥ªÁªü‰ø°ÊÅØ</div></div>
+	        <div id="op_2" class="opt_no" onclick="child_cn(2)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Ê®°ÂºèËÆæÁΩÆ</div></div>
+	        <div id="op_3" class="opt_no" onclick="child_cn(3)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">STAËÆæÁΩÆ</div></div>
+	        <div id="op_4" class="opt_no" onclick="child_cn(4)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">APËÆæÁΩÆ</div></div>
+	        <div id="op_5" class="opt_no" onclick="child_cn(5)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">ÂÖ∂ÂÆÉËÆæÁΩÆ</div></div>
+	        <div id="op_6" class="opt_no" onclick="child_cn(6)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Ë¥¶Âè∑ÁÆ°ÁêÜ</div></div>
+	        <div id="op_7" class="opt_no" onclick="child_cn(7)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">ËΩØ‰ª∂ÂçáÁ∫ß</div></div>
+	        <div id="op_8" class="opt_no" onclick="child_cn(8)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">ÈáçÂêØ</div></div>
+	        <div id="op_9" class="opt_no" onclick="child_cn(9)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">ÊÅ¢Â§ç</div></div>
+	    </div>
+	    <div id="back_div" class="shadow back_div">
+	        <iframe id="child_page" name="child_page" frameborder="0" style="border-style:none;width:100%;height:500px;border-spacing:0px" src="" scrolling="no" allowTransparency="true"></iframe>
+	    </div>
+	    <div class="cl"></div>
+	    <div class="sp_20"></div>
+		<div class="bot_txt">Web Ver:1.0.07</div>
+</body>
+</html>
+-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+.l4
+{
+	margin-left:4px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.tr
+{
+	text-align:right;
+}
+.r10
+{
+	margin-right:10px;
+}
+.white
+{
+	color:white;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_20
+{
+	height:20px;
+	width:500px;
+}
+</style>
+</head>
+<body class="in_body" onload="init_sta_setting()">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <form name= "form_sta_setting" method="post" action="do_cmd_cn.html">
+        <div style="height:400px" id="div_3_1">
+            <div class="label">ÁΩëÁªúÂêçÁß∞ÔºàSSIDÔºâ<br />Ê≥®ÊÑèÂå∫ÂàÜÂ§ßÂ∞èÂÜô</div>
+            <div class="fw"><input name="sta_setting_ssid" type="text" style="width:166px;height:20px;font-size:14px" />
+			<input type="button" class="btn l4" value="ÊêúÁ¥¢" onclick="search()"/>
+            </div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">Âä†ÂØÜÊñπÂºè</div>
+            <div class="fw"><select name="sta_setting_auth_sel" onchange="auth_change()" style="width:100px;height:20px">
+				<option value="OPEN">Disable</option>
+				<option value="ENCRYPT">Enable</option>
+				</select>
+			</div>
+            <div class="cl"></div>
+            <div class="line"></div>
+			<div id="sta_key" style="visibility:hidden;display:none">
+				<div class="label">ÂØÜÁ†Å</div>
+				<div class="fw">
+				<input name="sta_setting_wpakey" type="password" class="text" id="wpa_key_text">
+				<div>
+				<input onclick="wpa_key_check_changed()" type="checkbox" style="margin-left: 0px;"/>
+				<font style="color:White;font-size:13px">ÊòæÁ§∫ÂØÜÁ†Å</font>
+				</div>
+				</div>
+				<div class="cl"></div>
+				<div class="line"></div>
+			</div>
+            <div class="label">Ëá™Âä®Ëé∑ÂæóIPÂú∞ÂùÄ</div>
+            <div class="fw">
+			<select name="wan_setting_dhcp" id="div_3_dhcp" style="width:100px;height:20px" onchange="dhcp(2)">
+			<option value="DHCP">Enable</option>
+			<option value="STATIC">DisaÔªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var cover_wmode = "%s";
+var cover_ap_ssid = "%s";
+var cover_ap_ip = "%s";
+var cover_ap_mac = "%s";
+var cover_sta_ssid = "%s";
+var cover_sta_rssi = "%d%";
+var cover_sta_ip = "%s";
+var cover_sta_mac = "%s";
+var cover_ver = "%s.%s";
+var cover_mid = "%s";
+
+function init()
+{
+	document.form_wmode.wmode.value=wifi_mode;
+}
+function init_main_page()
+{
+	document.getElementById("cover_mid").innerHTML=cover_mid;
+	document.getElementById("cover_ver").innerHTML=cover_ver;
+	document.getElementById("cover_wmode").innerHTML=cover_wmode;
+	if(cover_wmode != "STA")
+	{
+		document.getElementById("cover_ap_ssid").innerHTML=cover_ap_ssid;
+		document.getElementById("cover_ap_ip").innerHTML=cover_ap_ip;
+		document.getElementById("cover_ap_mac").innerHTML=cover_ap_mac;
+	}
+	if(cover_wmode != "AP")
+	{
+		document.getElementById("cover_sta_ssid").innerHTML=cover_sta_ssid;
+		document.getElementById("cover_sta_rssi").innerHTML=cover_sta_rssi;
+		document.getElementById("cover_sta_ip").innerHTML=cover_sta_ip;
+		document.getElementById("cover_sta_mac").innerHTML=cover_sta_mac;
+	}
+}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.lab_5
+{
+	font-size:15px;
+	color:White;
+	margin-left:-10px;
+}
+.cu_b
+{
+	cursor:pointer;
+	font-weight:bold;
+}
+.sp_5
+{
+	width:10px;
+	height:5px;	
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.lab_r
+{
+	float:left;
+	width:50%;
+	color:white;
+	text-align:right;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.lab_l
+{
+	float:left;
+	width:40%;
+	color:white;
+	margin-bottom:-2px;
+	margin-left:10%;
+	font-size:13px;
+}
+.line_l
+{
+	height:1px;
+	background-color:white;
+	width:450px;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:50px;
+	overflow:hidden;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+</style>
+</head>
+<body class="in_body" onload="init_main_page()">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <div class="lab_5 cu_b" onclick="upfold(2);child_getH();"><font id="up_2"></font></div>
+                <div class="sp_5"></div>
+                <div id="up_2_div">
+                <div class="label">ËÆæÂ§áÂ∫èÂàóÂè∑</div>
+                <div class="lab_r" id="cover_mid"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">ËΩØ‰ª∂ÁâàÊú¨Âè∑</div>
+                <div class="lab_r" id="cover_ver"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">WiFiÂ∑•‰ΩúÊ®°Âºè</div>
+                <div class="lab_r" id="cover_wmode"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">APÊ®°Âºè</div>
+                <div class="lab_r"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="lab_l">SSID</div>
+                <div class="lab_r" id="cover_ap_ssid"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">IPÂú∞ÂùÄ</div>
+                <div class="lab_r" id="cover_ap_ip"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">MACÂú∞ÂùÄ</div>
+                <div class="lab_r" id="cover_ap_mac"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="label">STAÊ®°Âºè</div>
+                <div class="lab_r"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="lab_l">Ë∑ØÁî±Âô®SSID</div>
+                <div class="lab_r" id="cover_sta_ssid"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">‰ø°Âè∑Âº∫Â∫¶</div>
+                <div class="lab_r" id="cover_sta_rssi"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">IPÂú∞ÂùÄ</div>
+                <div class="lab_r" id="cover_sta_ip"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">MACÂú∞ÂùÄ</div>
+                <div class="lab_r" id="cover_sta_mac"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                </div>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var cover_wmode = "%s";
+var cover_ap_ssid = "%s";
+var cover_ap_ip = "%s";
+var cover_ap_mac = "%s";
+var cover_sta_ssid = "%s";
+var cover_sta_rssi = "%d%";
+var cover_sta_ip = "%s";
+var cover_sta_mac = "%s";
+var cover_ver = "%s.%s";
+var cover_mid = "%s";
+
+function init()
+{
+	document.form_wmode.wmode.value=wifi_mode;
+}
+function init_main_page()
+{
+	document.getElementById("cover_mid").innerHTML=cover_mid;
+	document.getElementById("cover_ver").innerHTML=cover_ver;
+	document.getElementById("cover_wmode").innerHTML=cover_wmode;
+	if(cover_wmode != "STA")
+	{
+		document.getElementById("cover_ap_ssid").innerHTML=cover_ap_ssid;
+		document.getElementById("cover_ap_ip").innerHTML=cover_ap_ip;
+		document.getElementById("cover_ap_mac").innerHTML=cover_ap_mac;
+	}
+	if(cover_wmode != "AP")
+	{
+		document.getElementById("cover_sta_ssid").innerHTML=cover_sta_ssid;
+		document.getElementById("cover_sta_rssi").innerHTML=cover_sta_rssi;
+		document.getElementById("cover_sta_ip").innerHTML=cover_sta_ip;
+		document.getElementById("cover_sta_mac").innerHTML=cover_sta_mac;
+	}
+}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.lab_5
+{
+	font-size:15px;
+	color:White;
+	margin-left:-10px;
+}
+.cu_b
+{
+	cursor:pointer;
+	font-weight:bold;
+}
+.sp_5
+{
+	width:10px;
+	height:5px;	
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.lab_r
+{
+	float:left;
+	width:50%;
+	color:white;
+	text-align:right;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.lab_l
+{
+	float:left;
+	width:40%;
+	color:white;
+	margin-bottom:-2px;
+	margin-left:10%;
+	font-size:13px;
+}
+.line_l
+{
+	height:1px;
+	background-color:white;
+	width:450px;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:50px;
+	overflow:hidden;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+</style>
+</head>
+<body class="in_body" onload="init_main_page()">
+    <div class="div_c" style="font-family:Arial">
+        <div class="lab_5 cu_b" onclick="upfold(2);child_getH();"><font id="up_2"></font></div>
+                <div class="sp_5"></div>
+                <div id="up_2_div">
+                <div class="label">MID</div>
+                <div class="lab_r" id="cover_mid"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Software Version</div>
+                <div class="lab_r" id="cover_ver"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">WiFi Work Mode</div>
+                <div class="lab_r" id="cover_wmode"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">AP mode</div>
+                <div class="lab_r"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="lab_l">SSID</div>
+                <div class="lab_r" id="cover_ap_ssid"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">IP Address</div>
+                <div class="lab_r" id="cover_ap_ip"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">MAC Address</div>
+                <div class="lab_r" id="cover_ap_mac"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="label">STA Mode</div>
+                <div class="lab_r"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="lab_l">Router SSID</div>
+                <div class="lab_r" id="cover_sta_ssid"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">Signal Strength</div>
+                <div class="lab_r" id="cover_sta_rssi"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">IP Address</div>
+                <div class="lab_r" id="cover_sta_ip"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                <div class="lab_l">MAC Address</div>
+                <div class="lab_r" id="cover_sta_mac"></div>
+                <div class="cl"></div>
+                <div class="line_l"></div>
+                </div>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<title>ËÆæÁΩÆ</title>
+<script type="text/javascript">
+function mouseover(c)
+{
+    c.style.textDecoration = "underline"
+}
+function mouseout(c)
+{
+    c.style.textDecoration = "none";
+}
+var sel = 1;
+function child_cn(v)
+{
+    opt_sel(v);
+    initDiv(v,"en");
+}
+function opt_sel(v)
+{
+    document.getElementById("op_"+sel).className = "opt_no";
+    document.getElementById("op_"+v).className = "opt_sel";
+    sel = v;
+}
+function initDiv(v,lan)
+{
+    var child = document.getElementById("child_page");
+    child.src = getUrl(v,lan);
+    switch(v){
+    	case 1:
+    	child_height(500);
+    	break;
+    	case 2:
+    	child_height(500);
+    	break;
+    	case 3:
+    	child_height(500);
+    	break;
+    	case 4:
+    	child_height(500);
+    	break;
+    	case 5:
+    	child_height(500);
+    	break;
+    	default:
+    	child_height(500);
+    	break;
+    }
+}
+function getUrl(v,lan)
+{
+    var end = "_en.html";
+    if(lan == "cn")
+    {
+        end = "_cn.html";
+    }
+    switch(v)
+    {
+        case 1:return "status"+end;break;
+        case 2:return "select"+end;break;
+        case 3:return "wireless"+end;break;
+        case 4:return "wirepoint"+end;break;
+        case 5:return "port"+end;break;
+        case 6:return "account"+end;break;
+        case 7:return "update"+end;break;
+        case 8:return "restart"+end;break;
+        case 9:return "reset"+end;break;
+    }
+}
+function underline(c,v)
+{
+    if(v == 1)
+    {
+        c.style.textDecoration = "underline";
+    }
+    if(v == 2)
+    {
+        c.style.textDecoration = "none";
+    }
+}
+function child_height(v)
+{
+	var child = document.getElementById("child_page");
+	if(child != null)
+	{
+		child.style.height = v+"px";
+	}
+}
+
+</script>
+<style>
+.lan
+{
+	cursor:pointer;
+	text-decoration:none;
+	color:#0163AC;
+	font-size:12px;
+	margin-left:3px;
+}
+.font_en
+{
+	font-family:Arial;
+}
+.lan_r
+{
+	margin-right:5px;
+}
+.opt_sel
+{
+	height:30px;
+	background-color:#006699;
+	padding-left:25px;
+	color:White;
+	cursor:pointer;
+}
+.opt_no
+{
+	height:30px;
+	padding-left:25px;
+	cursor:pointer;
+	color:#757475;
+}
+.opt_cn
+{
+	padding-top:4px;
+	font-size:18px;
+}
+.shadow
+{
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);/*ie*/ 
+	-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/ 
+	-webkit-box-shadow: 2px 2px 10px #909090;/*safariÊàñchrome*/ 
+	box-shadow:2px 2px 10px #909090;/*operaÊàñie9*/ 
+}
+.back_div
+{
+	width:600px;
+	float:left;
+	background:scroll center center;
+	background-color:#006699;
+	margin-top:10px;
+	border-radius:20px 20px 20px 20px;
+}
+.cl
+{
+	clear:left;
+}
+.sp_20
+{
+	width:10px;
+	height:20px;	
+}
+.sp_80
+{
+	width:10px;
+	height:80px;	
+}
+.bot_txt
+{
+	font-family:Arial;
+	font-size:14px;
+	text-align:center;
+	color:#757475;
+}
+</style>
+</head>
+
+<body style="background-color:#F5F5F5" onload="child_cn(1)">
+	<div style="width:900px;margin-left:auto;margin-right:auto;margin-top:15px;font-family:Arial">
+		<iframe  width="0px" height="0px" id="lang_iframe_id" style="border-style:none"></iframe>
+	    <div style="width:50%;float:left;height:42px"></div>		
+	    <div style="width:50%;float:left;height:22px;margin-top:16px;text-align:center;">
+		<a href="index_cn.html" class="lan lan_r " onmouseover="mouseover(this)" onmouseout="mouseout(this)" style="font-family:ÂæÆËΩØÈõÖÈªë">‰∏≠Êñá</a>
+		<font style="font-size: 12px;color: #0163AC">|</font>
+		<a class="lan font_en">English</a>
+		</div>		
+	    <div class="cl"></div>		
+	    <div style="width:140px;float:left;" >
+	        <div class="sp_80"></div>
+	        <div id="op_1" class="opt_sel" onclick="child_cn(1)" onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">System</div></div>
+	        <div id="op_2" class="opt_no" onclick="child_cn(2)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Work Mode</div></div>
+	        <div id="op_3" class="opt_no" onclick="child_cn(3)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">STA Setting</div></div>
+	        <div id="op_4" class="opt_no" onclick="child_cn(4)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">AP Setting</div></div>
+	        <div id="op_5" class="opt_no" onclick="child_cn(5)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Other Setting</div></div>
+	        <div id="op_6" class="opt_no" onclick="child_cn(6)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Account</div></div>
+	        <div id="op_7" class="opt_no" onclick="child_cn(7)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Upgrade SW</div></div>
+	        <div id="op_8" class="opt_no" onclick="child_cn(8)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Restart</div></div>
+	        <div id="op_9" class="opt_no" onclick="child_cn(9)"  onmouseover="underline(this,1)" onmouseout="underline(this,2)"><div class="opt_cn">Restore</div></div>
+	    </div>
+	    <div id="back_div" class="shadow back_div">
+	        <iframe id="child_page" name="child_page" frameborder="0" style="border-style:none;width:100%;height:500px;border-spacing:0px" src="" scrolling="no" allowTransparency="true"></iframe>
+	    </div>
+	    <div class="cl"></div>
+	    <div class="sp_20"></div>
+		<div class="bot_txt">Web Ver:1.0.07</div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var wifi_mode = "%s";
+
+	function init()
+	{
+		document.form_wmode.wifi_mode.value=wifi_mode;
+	}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_120
+{
+	width:10px;
+	height:120px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.sp_20
+{
+	height:20px;
+	width:500px;
+}
+.tr
+{
+	text-align:center;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init()">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+		<form name= "form_wmode" method="post" action="do_cmd_cn.html">
+        <div  style="height:400px;">
+            <font class="w_s15_b">Ê®°ÂºèÈÄâÊã©</font>
+            <div class="sp_120"></div>
+            <div class="lab_4" style="margin-left:120px">
+                Ê®°ÂºèÈÄâÊã©Ôºö<select name="wifi_mode" style="width:150px"><option value="APSTA">AP+STAÊ®°Âºè</option><option value="AP">AP Ê®°Âºè</option><option value="STA">STA Ê®°Âºè</option></select>
+            </div>
+            <div class="sp_20"></div>
+ 		<div style="width:10px; height:10px"></div>
+		<div style="width:100%;" class="tr"><input onclick="submit()" type="button" class="btn" value="‰øùÂ≠ò"/></div>
+       </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var wifi_mode = "%s";
+
+	function init()
+	{
+		document.form_wmode.wifi_mode.value=wifi_mode;
+	}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_120
+{
+	width:10px;
+	height:120px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.sp_20
+{
+	height:20px;
+	width:500px;
+}
+.tr
+{
+	text-align:center;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init()">
+    <div class="div_c" style="font-family:Arial">
+		<form name= "form_wmode" method="post" action="do_cmd_en.html">
+        <div  style="height:400px;">
+            <font class="w_s15_b">Select Mode</font>
+            <div class="sp_120"></div>
+            <div class="lab_4" style="margin-left:120px">
+                Select Mode: <select name="wifi_mode" style="width:150px"><option value="APSTA">AP+STA mode</option><option value="AP">AP mode</option><option value="STA">STA mode</option></select>
+            </div>
+            <div class="sp_20"></div>
+ 		<div style="width:10px; height:10px"></div>
+		<div style="width:100%;" class="tr"><input onclick="submit()" type="button" class="btn" value="Save"/></div>
+       </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+	var user_name = "%s";
+var user_password = "%s";
+
+function init_account_form()
+{
+	document.getElementById("user_name").innerHTML=user_name;
+	document.getElementById("user_password").innerHTML=user_password;
+}
+function user_update_apply()
+{
+	var f=document.form_user_update;
+	if (f.new_user_name.value=="")
+	{
+		alert("Áî®Êà∑Âêç‰∏çËÉΩ‰∏∫Á©∫!");
+		return ;
+	}
+	if(f.new_user_name.value.length>15)
+	{
+		alert("Áî®Êà∑ÂêçÁöÑÂ≠óÁ¨¶ÂøÖÈ°ªÂ∞è‰∫é15‰∏™ÔºÅ");
+		return ;
+	}
+	if(f.new_user_password.value.length>15)
+	{
+		alert("ÂØÜÁ†ÅÁöÑÂ≠óÁ¨¶ÂøÖÈ°ªÂ∞è‰∫é15‰∏™ÔºÅ");
+		return ;
+	}
+	document.getElementById("user_name").value=f.new_user_name.value;
+	document.getElementById("user_password").value=f.new_user_password.value;
+	f.submit();
+}
+	</script>
+<style>
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_60
+{
+	width:10px;
+	height:60px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.lab_2
+{
+	float:left;
+	width:40%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.sp_10
+{
+	width:10px;
+	height:10px;	
+}
+.line2
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.text_div
+{
+	float:left;
+	width:60%;
+	text-align:right;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init_account_form()">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <form name= "form_user_update" method="post" action="do_cmd_cn.html">
+            <font class=" white s15 b">ËÆæÁΩÆ‰∏Ä‰∏™Êñ∞ÁöÑÁôªÂΩïË¥¶Âè∑‰∏éÂØÜÁ†Å</font>
+            <div class="sp_60"></div>
+            <div class="lab_4">
+                <div class="lab_2">ÂéüÁî®Êà∑Âêç</div>
+				<div class="lab_2" style="float:right" id="user_name" ></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="lab_2">ÂéüÂØÜÁ†Å</div>
+				<div class="lab_2" style="float:right" id="user_password" ></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="lab_2">Êñ∞Áî®Êà∑Âêç</div>
+                <div class="text_div"><input name="new_user_name" type="text" class="text2" /></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="lab_2">Êñ∞ÂØÜÁ†Å</div>
+                <div class="text_div"><input name="new_user_password" type="text" class="text2" /></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="sp_10"></div>
+                <div class="sp_10"></div>
+                <div style="width:100%;text-align:right">
+                    <input onclick="user_update_apply()" type="button" class="btn" value="‰øùÂ≠ò"/>
+                </div>
+            </div>
+			</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+	var user_name = "%s";
+var user_password = "%s";
+
+function init_account_form()
+{
+	document.getElementById("user_name").innerHTML=user_name;
+	document.getElementById("user_password").innerHTML=user_password;
+}
+function user_update_apply()
+{
+	var f=document.form_user_update;
+	if (f.new_user_name.value=="")
+	{
+		alert("The user name is empty!");
+		return ;
+	}
+	if(f.new_user_name.value.length>15)
+	{
+		alert("Please enter 1-15 characters!");
+		return ;
+	}
+	if(f.new_user_password.value.length>15)
+	{
+		alert("Please enter 0-15 characters!");
+		return ;
+	}
+	document.getElementById("user_name").value=f.new_user_name.value;
+	document.getElementById("user_password").value=f.new_user_password.value;
+	f.submit();
+}
+	</script>
+<style>
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_60
+{
+	width:10px;
+	height:60px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.lab_2
+{
+	float:left;
+	width:40%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.sp_10
+{
+	width:10px;
+	height:10px;	
+}
+.line2
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.text_div
+{
+	float:left;
+	width:60%;
+	text-align:right;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init_account_form()">
+    <div class="div_c" style="font-family:Arial">
+        <form name= "form_user_update" method="post" action="do_cmd_en.html">
+            <font class=" white s15 b">Set a New Account and Password</font>
+            <div class="sp_60"></div>
+            <div class="lab_4">
+                <div class="lab_2">Current User Name</div>
+				<div class="lab_2" style="float:right" id="user_name" ></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="lab_2">Current Password</div>
+				<div class="lab_2" style="float:right" id="user_password" ></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="lab_2">New User Name</div>
+                <div class="text_div"><input name="new_user_name" type="text" class="text2" /></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="lab_2">New Password</div>
+                <div class="text_div"><input name="new_user_password" type="text" class="text2" /></div>
+                <div class="cl"></div>
+                <div class="sp_10"></div>
+                <div class="line2"></div>
+                <div class="sp_10"></div>
+                <div class="sp_10"></div>
+                <div style="width:100%;text-align:right">
+                    <input onclick="user_update_apply()" type="button" class="btn" value="Save"/>
+                </div>
+            </div>
+			</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_60
+{
+	width:10px;
+	height:60px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.sp_53
+{
+	width:10px;
+	height:53px;	
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+.r20
+{
+	margin-right:20px;
+}
+</style>
+</head>
+<body class="in_body">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <form name= "form_restart" method="post" action="success_cn.html">
+		<INPUT type=hidden name=QLZ_PROCESS_CMD value=RESTART>
+        <div style="height:400px">
+            <font class="w_s15_b">ÈáçÂêØÊ®°Âùó</font>
+            <div class="sp_60"></div>
+            <div class="lab_4">ÈáçË¶ÅÊèêÁ§∫Ôºö<br /><br />ÈáçÂêØÂêéÔºåÊÇ®ÂøÖÈ°ªÈáçÊñ∞ÁôªÂΩïÈÖçÁΩÆÁïåÈù¢ÔºåÂª∫ËÆÆÂÆåÊàêÊâÄÊúâÈÖçÁΩÆÂêéÂÜçÈáçÂêØ„ÄÇ<br />ÈáçÊñ∞ÂêØÂä®‰ºö‰∏≠Êñ≠ÁΩëÁªúÂæàÁü≠‰∏ÄÊÆµÊó∂Èó¥ÔºåÁ°ÆÂÆöÂêóÔºü</div>
+            <div class="sp_53"></div>
+            <div class="lab_4"><input onclick="submit()" type="button" class="btn r20" value="Á°ÆËÆ§"/><input type="button" class="btn" value="ËøîÂõû" onclick="window.parent.child_cn(1)"/></div>
+        </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_60
+{
+	width:10px;
+	height:60px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.sp_53
+{
+	width:10px;
+	height:53px;	
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+.r20
+{
+	margin-right:20px;
+}
+</style>
+</head>
+<body class="in_body">
+    <div class="div_c" style="font-family:Arial">
+        <form name= "form_restart" method="post" action="success_en.html">
+		<INPUT type=hidden name=QLZ_PROCESS_CMD value=RESTART>
+        <div style="height:400px">
+            <font class="w_s15_b">Restart Device</font>
+            <div class="sp_60"></div>
+            <div class="lab_4">Important notice:<br /><br />After restart, you will need to re-login the configuration interface.It is recommended to restart after completing all configurations.<br />Restart will interrupt the network for a very short period, are you sure to restart now?</div>
+            <div class="sp_53"></div>
+            <div class="lab_4"><input onclick="submit()" type="button" class="btn r20" value="OK"/><input type="button" class="btn" value="Back" onclick="window.parent.child_cn(1)"/></div>
+        </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_53
+{
+	width:10px;
+	height:53px;	
+}
+.sp_60
+{
+	width:10px;
+	height:60px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+.r20
+{
+	margin-right:20px;
+}
+</style>
+</head>
+<body class="in_body">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <form name= "form_reload" method="post" action="success_cn.html">
+		<INPUT type=hidden name=QLZ_PROCESS_CMD value=RELOAD>
+        <div style="height:400px">
+            <font class="w_s15_b">ÊÅ¢Â§çÂá∫ÂéÇËÆæÁΩÆ</font>
+            <div class="sp_60"></div>
+            <div class="lab_4">ÈáçË¶ÅÊèêÁ§∫Ôºö<br /><br />ÊÅ¢Â§çÂá∫ÂéÇËÆæÁΩÆÂêéÔºåÊâÄÊúâÁî®Êà∑ÁöÑÈÖçÁΩÆÈÉΩÂ∞ÜÂà†Èô§ÔºåÊÇ®ÂèØ‰ª•ÈÄöËøáhttp://192.168.4.1Êù•ÈáçÊñ∞ÈÖçÁΩÆÔºåÁôªÂΩïÁî®Êà∑ÂêçÂíåÂè£‰ª§ÈÉΩÊòØadmin„ÄÇÁ°ÆÂÆöÊÅ¢Â§çÂá∫ÂéÇËÆæÁΩÆÂêóÔºü</div>
+            <div class="sp_53"></div>
+            <div class="lab_4"><input onclick="submit()" type="button" class="btn r20" value="Á°ÆËÆ§"/><input type="button" class="btn" value="ËøîÂõû" onclick="window.parent.child_cn(1)"/></div>
+        </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_53
+{
+	width:10px;
+	height:53px;	
+}
+.sp_60
+{
+	width:10px;
+	height:60px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+.r20
+{
+	margin-right:20px;
+}
+</style>
+</head>
+<body class="in_body">
+    <div class="div_c" style="font-family:Arial">
+        <form name= "form_reload" method="post" action="success_en.html">
+		<INPUT type=hidden name=QLZ_PROCESS_CMD value=RELOAD>
+        <div style="height:400px">
+            <font class="w_s15_b">Restore Factory Setting</font>
+            <div class="sp_60"></div>
+            <div class="lab_4">Important notice:<br /><br />After restoring factory settings, all users‚Äô configuration will be deleted. You can reconfigure it on http://192.168.4.1. Account and password are both ‚Äúadmin‚Äù.</div>
+            <div class="sp_53"></div>
+            <div class="lab_4"><input onclick="submit()" type="button" class="btn r20" value="OK"/><input type="button" class="btn" value="Back" onclick="window.parent.child_cn(1)"/></div>
+        </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ˇ˛< h t m l >  
+ < H E A D >    
+ < m e t a   h t t p - e q u i v = " X - U A - C o m p a t i b l e "   c o n t e n t = " I E = 8 " >  
+ < s t y l e >  
+ . d i v _ c _ w  
+ {  
+ 	 m a r g i n - l e f t : 5 0 p x ;  
+ 	 m a r g i n - r i g h t : 5 0 p x ;  
+ 	 m a r g i n - t o p : 5 0 p x ;  
+ 	 m a r g i n - b o t t o m : 5 0 p x ;  
+ 	 c o l o r : W h i t e ;  
+ }  
+ . s 1 5 _ b  
+ {  
+ 	 f o n t - s i z e : 1 5 p x ;  
+ 	 f o n t - w e i g h t : b o l d ;  
+ }  
+ . s p _ 1 2 0  
+ {  
+ 	 w i d t h : 1 0 p x ;  
+ 	 h e i g h t : 1 2 0 p x ; 	  
+ }  
+ . l a b _ 4  
+ {  
+ 	 m a r g i n - l e f t : 7 0 p x ;  
+ 	 m a r g i n - r i g h t : 5 0 p x ;  
+ 	 c o l o r : w h i t e ;  
+ 	 f o n t - s i z e : 1 3 p x ;  
+ }  
+ < / s t y l e >  
+ < / H E A D >  
+ < b o d y   c l a s s = " i n _ b o d y " >  
+ < d i v   i d = " l a n g _ c n _ i d "   c l a s s = " d i v _ c _ w "   s t y l e = " f o n t - f a m i l y : Æ_oè≈ñ—û; f o n t - s i z e : 1 3 p x ; " >  
+         < d i v   c l a s s = " s 1 5 _ b " > Õë/TbüRˇ< / d i v >  
+         < d i v   c l a s s = " s p _ 1 2 0 " > < / d i v >  
+         < d i v   c l a s s = " l a b _ 4 " > ®`ÔSÂN	êÈbKb®RsQÌïÂãuòbÕë∞eﬁè•cW I F I !jWW@b^\Q‹~TçQ{vU_ÛÅMënLubó0< / a > < / d i v >  
+ < / d i v >  
+ < / b o d y >  
+ < / h t m l >  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ˇ˛< h t m l >  
+ < H E A D >    
+ < m e t a   h t t p - e q u i v = " X - U A - C o m p a t i b l e "   c o n t e n t = " I E = 8 " >  
+ < s t y l e >  
+ . d i v _ c _ w  
+ {  
+ 	 m a r g i n - l e f t : 5 0 p x ;  
+ 	 m a r g i n - r i g h t : 5 0 p x ;  
+ 	 m a r g i n - t o p : 5 0 p x ;  
+ 	 m a r g i n - b o t t o m : 5 0 p x ;  
+ 	 c o l o r : W h i t e ;  
+ }  
+ . s 1 5 _ b  
+ {  
+ 	 f o n t - s i z e : 1 5 p x ;  
+ 	 f o n t - w e i g h t : b o l d ;  
+ }  
+ . s p _ 1 2 0  
+ {  
+ 	 w i d t h : 1 0 p x ;  
+ 	 h e i g h t : 1 2 0 p x ; 	  
+ }  
+ . l a b _ 4  
+ {  
+ 	 m a r g i n - l e f t : 7 0 p x ;  
+ 	 m a r g i n - r i g h t : 5 0 p x ;  
+ 	 c o l o r : w h i t e ;  
+ 	 f o n t - s i z e : 1 3 p x ;  
+ }  
+ < / s t y l e >  
+ < / H E A D >  
+ < b o d y   c l a s s = " i n _ b o d y " >  
+ < d i v   i d = " l a n g _ c n _ i d "   c l a s s = " d i v _ c _ w "   s t y l e = " f o n t - f a m i l y : A r i a l ; f o n t - s i z e : 1 3 p x ; " >  
+         < d i v   c l a s s = " s 1 5 _ b " > R e b o o t i n g   S u c c e s s f u l ! < / d i v >  
+         < d i v   c l a s s = " s p _ 1 2 0 " > < / d i v >  
+         < d i v   c l a s s = " l a b _ 4 " > Y o u   c a n   c h o o s e   t o   m a n u a l l y   c l o s e   t h e   p a g e   o r   r e c o n n e c t   t h e   W I F I   m o d u l e   o f   n e t w o r k   a n d   t h e n   l o g i n   t o   t h e   c o n f i g u r a t i o n   i n t e r f a c e . < / a > < / d i v >  
+ < / d i v >  
+ < / b o d y >  
+ < / h t m l >  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var sta_setting_ssid = "%s";
+var sta_setting_auth = "%s";
+var sta_setting_wpakey = "%s";
+var wan_setting_dhcp = "%s";
+var wan_setting_ip = "%s";
+var wan_setting_msk = "%s";
+var wan_setting_gw = "%s";
+var wan_setting_dns = "%s";
+	var wpa_key_show= "0";
+	function wpa_key_check_changed()
+	{
+		if (wpa_key_show == "1")
+		{
+			if (window.ActiveXObject) 
+			{
+				document.all('sta_setting_wpakey').outerHTML="<input type=password maxlength=64 size=32 name=sta_setting_wpakey id=wep_key_text class='text' value='"+document.all('sta_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "password";
+			}
+			wpa_key_show="0";
+		}  
+		else
+		{
+			if (window.ActiveXObject) 
+			{
+				document.all('sta_setting_wpakey').outerHTML="<input type=text maxlength=64 size=32 name=sta_setting_wpakey id=wep_key_text class='text' value='"+document.all('sta_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "text";
+			}
+			wpa_key_show="1";
+		}
+	}
+	function enableCon(c,v)
+	{
+		var con = document.getElementById(c);
+		if(con  != null)
+		{
+			if(v == 1)
+			{
+				con.disabled = "disabled";
+			}
+			else
+			{
+				con.disabled = "";
+			}
+		}
+	}
+	function show(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "visible";
+			c.style.display = "";
+		}
+	}
+	
+	function hide(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "hidden";
+			c.style.display = "none";
+		}
+	}
+	function dhcp(v)
+	{
+		var c;
+		if(v == 2)
+		{
+			c = document.getElementById("div_3_dhcp");
+			if(c != null)
+			{
+				if(c.value == "DHCP")
+				{
+					enableCon("div_3_ip",1);
+					enableCon("div_3_sub",1);
+					enableCon("div_3_gate",1);
+					enableCon("div_3_dns",1);
+				}
+				else
+				{
+					enableCon("div_3_ip",2);
+					enableCon("div_3_sub",2);
+					enableCon("div_3_gate",2);
+					enableCon("div_3_dns",2);
+				}
+			}
+		}
+	}
+	
+	function sta_setting_set()
+	{
+		var f=document.form_sta_setting;
+		f.sta_setting_ssid.value=sta_setting_ssid;
+		if (sta_setting_auth== "OPEN"){
+			f.sta_setting_auth_sel.options.selectedIndex= 0;
+		}
+		else{
+			f.sta_setting_auth_sel.options.selectedIndex= 1;	
+		}
+		auth_change();
+	}
+	
+	function init_sta_setting()
+	{
+		var f=document.form_sta_setting;
+		sta_setting_set();
+		f.sta_setting_wpakey.value= sta_setting_wpakey;
+		f.wan_setting_dhcp.value= wan_setting_dhcp;
+		f.wan_setting_ip.value= wan_setting_ip;
+		f.wan_setting_msk.value= wan_setting_msk;
+		f.wan_setting_gw.value= wan_setting_gw;
+		f.wan_setting_dns.value= wan_setting_dns;
+		dhcp(2);
+	}
+	
+	function to_surver(gg_ssid, gg_bssid, gg_auth, gg_encry)
+	{
+		var gg=document.form_sta_setting;
+		gg.sta_setting_wpakey.value= "";
+		sta_setting_ssid= gg_ssid;
+		sta_setting_auth= gg_auth;
+		sta_setting_set();
+		if (sta_setting_auth!= "OPEN")
+		{
+			alert('ËØ∑ËæìÂÖ•ÂØÜÁ†Å!');
+			document.form_sta_setting.sta_setting_wpakey.focus();
+			document.form_sta_setting.sta_setting_wpakey.select();
+		}
+	}
+	function ipAdd(v)
+	{
+		var re=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+		return re.test(v);
+	}
+	function sta_form_apply()
+	{
+		var f=document.form_sta_setting;
+		if(f.sta_setting_ssid.value=="")
+		{
+			alert("SSID‰∏∫Á©∫ÔºÅ");
+			return;
+		}
+		if(f.sta_setting_ssid.value.length>32)
+		{
+			alert("SSIDÁöÑÂ≠óÁ¨¶ÂøÖÈ°ªÂ∞è‰∫é32‰∏™ÔºÅ");
+			return;
+		}
+		if (f.sta_setting_auth_sel.options.selectedIndex== 0)
+		{
+			f.sta_setting_auth_sel.value= "OPEN";
+		}else
+		{
+			f.sta_setting_auth_sel.value= "ENCRYPT";
+		}
+	
+		if((f.sta_setting_auth_sel.options.selectedIndex!=0)&&(f.sta_setting_wpakey.value == ""))
+		{
+			alert("ÂØÜÁ†Å‰∏∫Á©∫ÔºÅ");
+			return;
+		}
+		if ((f.sta_setting_auth_sel.value== "ENCRYPT"))
+		{
+			if((f.sta_setting_wpakey.value.length<5)||(f.sta_setting_wpakey.value.length>64))
+			{
+				alert("ËØ∑ËæìÂÖ•5-63‰∏™Â≠óÁ¨¶ÔºÅ");
+				return;
+			}
+		}
+		if(!ipAdd(f.wan_setting_ip.value))
+		{
+			alert("IPÂú∞ÂùÄÊó†ÊïàÔºÅ");
+			return;
+		}
+		if(!ipAdd(f.wan_setting_msk.value))
+		{
+			alert("Â≠êÁΩëÊé©Á†ÅÊó†ÊïàÔºÅ");
+			return;
+		}
+		if(!ipAdd(f.wan_setting_gw.value))
+		{
+			alert("ÁΩëÂÖ≥Âú∞ÂùÄÊó†ÊïàÔºÅ");
+			return;
+		}
+		if(!ipAdd(f.wan_setting_dns.value))
+		{
+			alert("DNSÊúçÂä°Âô®Âú∞ÂùÄÊó†ÊïàÔºÅ");
+			return;
+		}
+		f.submit();
+	}
+	function auth_change()
+	{
+		var v=document.form_sta_setting.sta_setting_auth_sel.options.selectedIndex;
+		if (v== 0)
+		{
+			hide("sta_key");
+		}
+		else
+		{
+			show("sta_key");
+		}
+	}
+var gg_ssid="";
+var gg_channel;
+var gg_bssid;
+var gg_auth;
+var gg_encry;
+function set_value(ssid, bssid, channel, auth, encry)
+{
+	gg_ssid = ssid;
+	gg_channel = channel;
+	gg_bssid = bssid;
+	gg_auth= auth;
+	gg_encry= encry;
+}
+function search()
+{
+    hide("div_3_1");
+    show("div_3_2");
+	document.getElementById("sta_search_iframe").src= "site_survey.html";
+	document.getElementById("refresh").disabled=true;
+	setTimeout("eb()",3000);
+}
+function eb()
+{
+	document.getElementById("refresh").disabled=false;
+}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.fw
+{
+	float:left;
+	width:50%;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+.l4
+{
+	margin-left:4px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.tr
+{
+	text-align:right;
+}
+.r10
+{
+	margin-right:10px;
+}
+.white
+{
+	color:white;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_20
+{
+	height:20px;
+	width:500px;
+}
+</style>
+</head>
+<body class="in_body" onload="init_sta_setting()">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <form name= "form_sta_setting" method="post" action="do_cmd_cn.html">
+        <div style="height:400px" id="div_3_1">
+            <div class="label">ÁΩëÁªúÂêçÁß∞ÔºàSSIDÔºâ<br />Ê≥®ÊÑèÂå∫ÂàÜÂ§ßÂ∞èÂÜô</div>
+            <div class="fw"><input name="sta_setting_ssid" type="text" style="width:166px;height:20px;font-size:14px" />
+			<input type="button" class="btn l4" value="ÊêúÁ¥¢" onclick="search()"/>
+            </div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">Âä†ÂØÜÊñπÂºè</div>
+            <div class="fw"><select name="sta_setting_auth_sel" onchange="auth_change()" style="width:100px;height:20px">
+				<option value="OPEN">Disable</option>
+				<option value="ENCRYPT">Enable</option>
+				</select>
+			</div>
+            <div class="cl"></div>
+            <div class="line"></div>
+			<div id="sta_key" style="visibility:hidden;display:none">
+				<div class="label">ÂØÜÁ†Å</div>
+				<div class="fw">
+				<input name="sta_setting_wpakey" type="password" class="text" id="wpa_key_text">
+				<div>
+				<input onclick="wpa_key_check_changed()" type="checkbox" style="margin-left: 0px;"/>
+				<font style="color:White;font-size:13px">ÊòæÁ§∫ÂØÜÁ†Å</font>
+				</div>
+				</div>
+				<div class="cl"></div>
+				<div class="line"></div>
+			</div>
+            <div class="label">Ëá™Âä®Ëé∑ÂæóIPÂú∞ÂùÄ</div>
+            <div class="fw">
+			<select name="wan_setting_dhcp" id="div_3_dhcp" style="width:100px;height:20px" onchange="dhcp(2)">
+			<option value="DHCP">Enable</option>
+			<option value="STATIC">Disable</option>
+			</select>
+			</div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">IPÂú∞ÂùÄ</div>
+            <div class="fw"><input name="wan_setting_ip" id="div_3_ip" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">Â≠êÁΩëÊé©Á†Å</div>
+            <div class="fw"><input name="wan_setting_msk" id="div_3_sub" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">ÁΩëÂÖ≥Âú∞ÂùÄ</div>
+            <div class="fw"><input name="wan_setting_gw" id="div_3_gate" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">DNSÊúçÂä°Âô®Âú∞ÂùÄ</div>
+            <div class="fw"><input name="wan_setting_dns" id="div_3_dns" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div style="margin-top:20px;color:white;width:100%;text-align:right">
+                <input onclick="sta_form_apply()" type="button" class="btn" value="‰øùÂ≠ò"/>
+            </div>
+        </div>
+		</form>
+        <div style="height:400px;display:none" id="div_3_2">
+            <font class="white s15 b">ËØ∑ÈÄâÊã©ÊÇ®ÂΩìÂâç‰ΩøÁî®ÁöÑÊó†Á∫øÁΩëÁªú</font>
+            <div class="sp_30"></div>
+            <div style="width:520px;height:300px">
+				<iframe frameborder="0" style="border-style:none;width:100%;height:300px; border-spacing:0px;background-color:#006699" id="sta_search_iframe"></iframe>
+            </div>
+            <div class="sp_20"></div>
+            <div class="lab_4 tr">
+			<input type="button" class="btn r10" value="Á°ÆÂÆö" onclick="hide('div_3_2');show('div_3_1');to_surver(gg_ssid, gg_bssid, gg_auth, gg_encry);"/>
+			<input onclick="search()" type="button" class="btn" value="Âà∑Êñ∞" id="refresh"/></div>
+        </div>
+    </div>
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var sta_setting_ssid = "%s";
+var sta_setting_auth = "%s";
+var sta_setting_wpakey = "%s";
+var wan_setting_dhcp = "%s";
+var wan_setting_ip = "%s";
+var wan_setting_msk = "%s";
+var wan_setting_gw = "%s";
+var wan_setting_dns = "%s";
+	var wpa_key_show= "0";
+	function wpa_key_check_changed()
+	{
+		if (wpa_key_show == "1")
+		{
+			if (window.ActiveXObject) 
+			{
+				document.all('sta_setting_wpakey').outerHTML="<input type=password maxlength=64 size=32 name=sta_setting_wpakey id=wep_key_text class='text' value='"+document.all('sta_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "password";
+			}
+			wpa_key_show="0";
+		}  
+		else
+		{
+			if (window.ActiveXObject) 
+			{
+				document.all('sta_setting_wpakey').outerHTML="<input type=text maxlength=64 size=32 name=sta_setting_wpakey id=wep_key_text class='text' value='"+document.all('sta_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "text";
+			}
+			wpa_key_show="1";
+		}
+	}
+	function enableCon(c,v)
+	{
+		var con = document.getElementById(c);
+		if(con  != null)
+		{
+			if(v == 1)
+			{
+				con.disabled = "disabled";
+			}
+			else
+			{
+				con.disabled = "";
+			}
+		}
+	}
+	function show(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "visible";
+			c.style.display = "";
+		}
+	}
+	
+	function hide(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "hidden";
+			c.style.display = "none";
+		}
+	}
+	function dhcp(v)
+	{
+		var c;
+		if(v == 2)
+		{
+			c = document.getElementById("div_3_dhcp");
+			if(c != null)
+			{
+				if(c.value == "DHCP")
+				{
+					enableCon("div_3_ip",1);
+					enableCon("div_3_sub",1);
+					enableCon("div_3_gate",1);
+					enableCon("div_3_dns",1);
+				}
+				else
+				{
+					enableCon("div_3_ip",2);
+					enableCon("div_3_sub",2);
+					enableCon("div_3_gate",2);
+					enableCon("div_3_dns",2);
+				}
+			}
+		}
+	}
+	
+	function sta_setting_set()
+	{
+		var f=document.form_sta_setting;
+		f.sta_setting_ssid.value=sta_setting_ssid;
+		if (sta_setting_auth== "OPEN"){
+			f.sta_setting_auth_sel.options.selectedIndex= 0;
+		}
+		else{
+			f.sta_setting_auth_sel.options.selectedIndex= 1;	
+		}
+		auth_change();
+	}
+	
+	function init_sta_setting()
+	{
+		var f=document.form_sta_setting;
+		sta_setting_set();
+		f.sta_setting_wpakey.value= sta_setting_wpakey;
+		f.wan_setting_dhcp.value= wan_setting_dhcp;
+		f.wan_setting_ip.value= wan_setting_ip;
+		f.wan_setting_msk.value= wan_setting_msk;
+		f.wan_setting_gw.value= wan_setting_gw;
+		f.wan_setting_dns.value= wan_setting_dns;
+		dhcp(2);
+	}
+	
+	function to_surver(gg_ssid, gg_bssid, gg_auth, gg_encry)
+	{
+		var gg=document.form_sta_setting;
+		gg.sta_setting_wpakey.value= "";
+		sta_setting_ssid= gg_ssid;
+		sta_setting_auth= gg_auth;
+		sta_setting_set();
+		if (sta_setting_auth!= "OPEN")
+		{
+			alert('ËØ∑ËæìÂÖ•ÂØÜÁ†Å!');
+			document.form_sta_setting.sta_setting_wpakey.focus();
+			document.form_sta_setting.sta_setting_wpakey.select();
+		}
+	}
+	function ipAdd(v)
+	{
+		var re=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+		return re.test(v);
+	}
+	function sta_form_apply()
+	{
+		var f=document.form_sta_setting;
+		if(f.sta_setting_ssid.value=="")
+		{
+			alert("SSID is empty!");
+			return;
+		}
+		if(f.sta_setting_ssid.value.length>32)
+		{
+			alert("Please enter 1-32 characters!");
+			return;
+		}
+		if (f.sta_setting_auth_sel.options.selectedIndex== 0)
+		{
+			f.sta_setting_auth_sel.value= "OPEN";
+		}else
+		{
+			f.sta_setting_auth_sel.value= "ENCRYPT";
+		}
+	
+		if((f.sta_setting_auth_sel.options.selectedIndex!=0)&&(f.sta_setting_wpakey.value == ""))
+		{
+			alert("The password is empty!");
+			return;
+		}
+		if ((f.sta_setting_auth_sel.value== "ENCRYPT"))
+		{
+			if((f.sta_setting_wpakey.value.length<5)||(f.sta_setting_wpakey.value.length>64))
+			{
+				alert("Please enter 5-63 characters!");
+				return;
+			}
+		}
+		if(!ipAdd(f.wan_setting_ip.value))
+		{
+			alert("Invalid IP address!");
+			return;
+		}
+		if(!ipAdd(f.wan_setting_msk.value))
+		{
+			alert("Invalid subnet mask!");
+			return;
+		}
+		if(!ipAdd(f.wan_setting_gw.value))
+		{
+			alert("Invalid gateway address!");
+			return;
+		}
+		if(!ipAdd(f.wan_setting_dns.value))
+		{
+			alert("Invalid DNS server address!");
+			return;
+		}
+		f.submit();
+	}
+	function auth_change()
+	{
+		var v=document.form_sta_setting.sta_setting_auth_sel.options.selectedIndex;
+		if (v== 0)
+		{
+			hide("sta_key");
+		}
+		else
+		{
+			show("sta_key");
+		}
+	}
+var gg_ssid="";
+var gg_channel;
+var gg_bssid;
+var gg_auth;
+var gg_encry;
+function set_value(ssid, bssid, channel, auth, encry)
+{
+	gg_ssid = ssid;
+	gg_channel = channel;
+	gg_bssid = bssid;
+	gg_auth= auth;
+	gg_encry= encry;
+}
+function search()
+{
+    hide("div_3_1");
+    show("div_3_2");
+	document.getElementById("sta_search_iframe").src= "site_survey.html";
+	document.getElementById("refresh").disabled=true;
+	setTimeout("eb()",3000);
+}
+function eb()
+{
+	document.getElementById("refresh").disabled=false;
+}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.fw
+{
+	float:left;
+	width:50%;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+.l4
+{
+	margin-left:4px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.tr
+{
+	text-align:right;
+}
+.r10
+{
+	margin-right:10px;
+}
+.white
+{
+	color:white;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_20
+{
+	height:20px;
+	width:500px;
+}
+</style>
+</head>
+<body class="in_body" onload="init_sta_setting()">
+    <div class="div_c" style="font-family:Arial">
+        <form name= "form_sta_setting" method="post" action="do_cmd_en.html">
+        <div style="height:400px" id="div_3_1">
+            <div class="label">Network NameÔºàSSIDÔºâ<br />Note: case sensitive</div>
+            <div class="fw"><input name="sta_setting_ssid" type="text" style="width:166px;height:20px;font-size:14px" />
+			<input type="button" class="btn l4" value="Scan" onclick="search()"/>
+            </div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">Encryption Method</div>
+            <div class="fw"><select name="sta_setting_auth_sel" onchange="auth_change()" style="width:100px;height:20px">
+				<option value="OPEN">Disable</option>
+				<option value="ENCRYPT">Enable</option>
+				</select>
+			</div>
+            <div class="cl"></div>
+            <div class="line"></div>
+			<div id="sta_key" style="visibility:hidden;display:none">
+				<div class="label">Password</div>
+				<div class="fw">
+				<input name="sta_setting_wpakey" type="password" class="text" id="wpa_key_text">
+				<div>
+				<input onclick="wpa_key_check_changed()" type="checkbox" style="margin-left: 0px;"/>
+				<font style="color:White;font-size:13px">Show passwords</font>
+				</div>
+				</div>
+				<div class="cl"></div>
+				<div class="line"></div>
+			</div>
+            <div class="label">Obtain an IP address automatically</div>
+            <div class="fw">
+			<select name="wan_setting_dhcp" id="div_3_dhcp" style="width:100px;height:20px" onchange="dhcp(2)">
+			<option value="DHCP">Enable</option>
+			<option value="STATIC">Disable</option>
+			</select>
+			</div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">IP Address</div>
+            <div class="fw"><input name="wan_setting_ip" id="div_3_ip" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">Subnet Mask</div>
+            <div class="fw"><input name="wan_setting_msk" id="div_3_sub" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">Gateway Address</div>
+            <div class="fw"><input name="wan_setting_gw" id="div_3_gate" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div class="label">DNS Server Address</div>
+            <div class="fw"><input name="wan_setting_dns" id="div_3_dns" type="text" class="text"></div>
+            <div class="cl"></div>
+            <div class="line"></div>
+            <div style="margin-top:20px;color:white;width:100%;text-align:right">
+                <input onclick="sta_form_apply()" type="button" class="btn" value="Save"/>
+            </div>
+        </div>
+		</form>
+        <div style="height:400px;display:none" id="div_3_2">
+            <font class="white s15 b">Please select your current wireless network</font>
+            <div class="sp_30"></div>
+            <div style="width:520px;height:300px">
+				<iframe frameborder="0" style="border-style:none;width:100%;height:300px; border-spacing:0px;background-color:#006699" id="sta_search_iframe"></iframe>
+            </div>
+            <div class="sp_20"></div>
+            <div class="lab_4 tr">
+			<input type="button" class="btn r10" value="OK" onclick="hide('div_3_2');show('div_3_1');to_surver(gg_ssid, gg_bssid, gg_auth, gg_encry);"/>
+			<input onclick="search()" type="button" class="btn" value="Refresh" id="refresh"/></div>
+        </div>
+    </div>
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<script type="text/javascript">
+var cover_ver = "V%s.%s";
+var update_file_name = "%s";
+
+function apply()
+{
+	var f=document.form_sw_upload;
+	if(f.files.value=="")
+    {
+		alert("ËØ∑ÈÄâÊã©Êñá‰ª∂ÔºÅ");
+		return ;
+	}
+	document.getElementById("up_sw").style.visibility = "hidden";
+	document.getElementById("up_sw").style.display = "";
+	document.getElementById("progressbar_id").style.visibility = "visible";
+	document.getElementById("progressbar_id").style.display = "";
+	f.submit();
+}
+function init_ver()
+{
+	document.getElementById("cover_ver").innerHTML=cover_ver;
+	document.getElementById("update_file_name").innerHTML=update_file_name;
+}
+</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_120
+{
+	width:10px;
+	height:50px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.sp_53
+{
+	width:10px;
+	height:53px;	
+}
+.btn
+{
+	width:76px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+.r20
+{
+	margin-right:20px;
+}
+</style>
+</head>
+<body class="in_body" onload="init_ver()">
+	<div class="div_c" style="display:none;font-family:ÂæÆËΩØÈõÖÈªë" id="progressbar_id">
+		<font class="w_s15_b">ÈÄöËÆØÊ®°ÂùóËΩØ‰ª∂ÂçáÁ∫ß</font>
+		<div class="sp_120"></div>
+		<div class="lab_4">Êñá‰ª∂Ê≠£Âú®‰∏ä‰º†‰∏≠ÔºåËØ∑ËÄêÂøÉÁ≠âÂæÖ...</div>
+		<div class="sp_120"></div>
+		<marquee style="margin-left:70px;solid #000000" direction="right" width="350" scrollamount="5" scrolldelay="50" bgcolor="#ECF2FF">
+			<table cellspacing="1" cellpadding="0">
+			<tr height=30>
+				<td bgcolor=#006699 width=12></td>
+				<td bgcolor=#006699 width=12></td>
+				<td bgcolor=#006699 width=12></td>
+			</tr>
+			</table>
+		</marquee>
+	</div>
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë" id="up_sw">
+        <form name= "form_sw_upload" method="post" action=success_cn.html enctype="multipart/form-data">
+		<INPUT type=hidden name=CMD value=SW_UPLOAD>
+        <div style="height:100px">
+            <font class="w_s15_b">ÈÄöËÆØÊ®°ÂùóËΩØ‰ª∂ÂçáÁ∫ß</font>
+            <div class="sp_120"></div>
+            <div class="lab_4">ÂΩìÂâçËΩØ‰ª∂ÁâàÊú¨Ôºö<a id="cover_ver"></a><br /><br />
+            <div class="lab_6">ËØ∑ÈÄâÊã©Êñá‰ª∂ÂêçÔºö<a id="update_file_name"></a></div><br /><br />
+			<div class="sp_5"></div><input name="files" size="40" maxlength="256" type="file" value=""></div>
+            <div class="sp_53"></div>
+            <div class="lab_4"><input onclick="apply()" type="button" class="btn r20" value="ÂºÄÂßãÂçáÁ∫ß"/></div>
+        </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<script type="text/javascript">
+var cover_ver = "V%s.%s";
+var update_file_name = "%s";
+
+
+function apply()
+{
+	var f=document.form_sw_upload;
+	if(f.files.value=="")
+    {
+		alert("Please select the file!");
+		return ;
+	}
+	document.getElementById("up_sw").style.visibility = "hidden";
+	document.getElementById("up_sw").style.display = "";
+	document.getElementById("progressbar_id").style.visibility = "visible";
+	document.getElementById("progressbar_id").style.display = "";
+	f.submit();
+}
+function init_ver()
+{
+	document.getElementById("cover_ver").innerHTML=cover_ver;
+	document.getElementById("update_file_name").innerHTML=update_file_name;
+}
+</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.w_s15_b
+{
+	color:White;
+	font-size:15px;
+	font-weight:bold;
+}
+.sp_120
+{
+	width:10px;
+	height:50px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+.sp_53
+{
+	width:10px;
+	height:53px;	
+}
+.btn
+{
+	width:76px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+.r20
+{
+	margin-right:20px;
+}
+</style>
+</head>
+<body class="in_body" onload="init_ver()">
+	<div class="div_c" style="display:none;font-family:Arial" id="progressbar_id">
+		<font class="w_s15_b">Upgrade Software</font>
+		<div class="sp_120"></div>
+		<div class="lab_4">Uploading,please wait patiently...</div>
+		<div class="sp_120"></div>
+		<marquee style="margin-left:70px;solid #000000" direction="right" width="350" scrollamount="5" scrolldelay="50" bgcolor="#ECF2FF">
+			<table cellspacing="1" cellpadding="0">
+			<tr height=30>
+				<td bgcolor=#006699 width=12></td>
+				<td bgcolor=#006699 width=12></td>
+				<td bgcolor=#006699 width=12></td>
+			</tr>
+			</table>
+		</marquee>
+	</div>
+    <div class="div_c" style="font-family:Arial" id="up_sw">
+        <form name= "form_sw_upload" method="post" action=success_en.html enctype="multipart/form-data">
+		<INPUT type=hidden name=CMD value=SW_UPLOAD>
+        <div style="height:100px">
+            <font class="w_s15_b">Upgrade Software</font>
+            <div class="sp_120"></div>
+            <div class="lab_4">Current version: <a id="cover_ver"></a><br /><br />
+            <div class="lab_6">Select file namedÔºö<a id="update_file_name"></a></div><br /><br />
+			<div class="sp_5"></div><input name="files" size="40" maxlength="256" type="file" value=""></div>
+            <div class="sp_53"></div>
+            <div class="lab_4"><input onclick="apply()" type="button" class="btn r20" value="Upload"/></div>
+        </div>
+		</form>
+    </div>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var ap_setting_ssid = "%s";
+var ap_setting_mac = "%s";
+var ap_setting_freq = "%d";
+var ap_setting_auth = "%s";
+var ap_setting_wpakey = "%s";
+var lan_setting_ip = "%s";
+var lan_setting_msk = "%s";
+var lan_setting_dhcp = "%s";
+
+	var height = 0;
+	function child_getH()
+	{
+		var nh = document.body.offsetHeight+200;
+		if(nh < 500)
+		{
+			nh = 500;
+		}
+		if(height != nh)
+		{
+			height = nh;
+			window.parent.child_height(height);
+		}
+	}
+	var wpa_key_show= "0";
+	function wpa_key_check_changed()
+	{
+		if (wpa_key_show == "1")
+		{
+			if (window.ActiveXObject)
+			{
+				document.all('ap_setting_wpakey').outerHTML="<input type=password maxlength=64 size=32 name=ap_setting_wpakey id=wep_key_text class='text' value='"+document.all('ap_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "password";
+			}
+			wpa_key_show="0";
+		}  
+		else
+		{
+			if (window.ActiveXObject)
+			{
+				document.all('ap_setting_wpakey').outerHTML="<input type=text maxlength=64 size=32 name=ap_setting_wpakey id=wep_key_text class='text' value='"+document.all('ap_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "text";
+			}
+			wpa_key_show="1";
+		}
+	}	
+
+	function hide(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "hidden";
+			c.style.display = "none";
+		}
+	}
+		function show(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "visible";
+			c.style.display = "";
+		}
+	}
+	function auth_change()
+	{
+		var v=document.form_ap_secu_setting.ap_setting_auth_sel.options.selectedIndex;
+		if (v== 0)
+		{
+			hide("ap_key");
+		}
+		else
+		{
+			show("ap_key");
+		}
+	}	
+	function init_ap_setting()
+	{
+		var f=document.form_ap_setting;
+		f.ap_setting_ssid.value=ap_setting_ssid;
+		document.getElementById("ap_setting_mac").innerHTML= ap_setting_mac;
+		f.ap_setting_freq.value= ap_setting_freq;
+	}
+	function init_ap_seu()
+	{
+		var f=document.form_ap_secu_setting;
+		if (ap_setting_auth== "OPEN")
+			f.ap_setting_auth_sel.options.selectedIndex= 0;
+		else
+			f.ap_setting_auth_sel.options.selectedIndex= 1;
+		show("wpa");
+
+		f.ap_setting_wpakey.value= ap_setting_wpakey;		
+		auth_change();				
+	}
+	function init_lan_setting()
+	{
+		var f=document.form_lan_setting;
+		f.lan_setting_ip.value=lan_setting_ip;
+		f.lan_setting_msk.value=lan_setting_msk;
+		f.lan_setting_dhcp.value=lan_setting_dhcp;
+	}
+	function ap_setting_apply()
+	{
+		var f=document.form_ap_setting;
+		if(f.ap_setting_ssid.value=="")
+		{
+			alert("SSID‰∏∫Á©∫ÔºÅ");
+			return;
+		}
+		if(f.ap_setting_ssid.value.length>32)
+		{
+			alert("SSIDÁöÑÂ≠óÁ¨¶ÂøÖÈ°ªÂ∞è‰∫é32‰∏™ÔºÅ");
+			return;
+		}
+		f.submit();
+	}
+	function ap_secu_setting_apply()
+	{
+		var f=document.form_ap_secu_setting;
+		if (f.ap_setting_auth_sel.options.selectedIndex== 0)
+		{
+			f.ap_setting_auth.value= "OPEN";
+		}
+		else
+		{
+			f.ap_setting_auth.value= "WPA2PSK";
+		}
+		if((f.ap_setting_auth_sel.options.selectedIndex!=0)&&(f.ap_setting_wpakey.value == ""))
+		{
+			alert("ÂØÜÁ†Å‰∏∫Á©∫ÔºÅ");
+			return;
+		}
+		if((f.ap_setting_auth_sel.options.selectedIndex!=0)&&((f.ap_setting_wpakey.value.length <8)||(f.ap_setting_wpakey.value.length >64)))
+		{
+			alert("ÂØÜÁ†ÅÈïøÂ∫¶ÂøÖÈ°ªÂ§ß‰∫é8‰∏™Â≠óÁ¨¶Â∞è‰∫é64‰∏™Â≠óÁ¨¶ÔºÅ");
+			return;
+		}
+		f.submit();
+	}
+	function ipAdd(v)
+	{
+		var re=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+		return re.test(v);
+	}
+	function lan_setting_apply()
+	{
+		var f=document.form_lan_setting;
+		if(!ipAdd(f.lan_setting_ip.value))
+		{
+			alert("IPÂú∞ÂùÄÊó†ÊïàÔºÅ");
+			return;
+		}
+		if(!ipAdd(f.lan_setting_ip.value))
+		{
+			alert("Â≠êÁΩëÊé©Á†ÅÊó†ÊïàÔºÅ");
+			return;
+		}
+		f.submit();
+	}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_30
+{
+	width:10px;
+	height:30px;	
+}
+.lab_4
+{
+	color:white;
+	font-size:13px;
+}
+.tr
+{
+	text-align:right;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.sp_10
+{
+	width:10px;
+	height:10px;	
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init_ap_setting();init_ap_seu();init_lan_setting()">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <div>
+            <font class="white s15 b">Êó†Á∫øÊé•ÂÖ•ÁÇπÂèÇÊï∞ËÆæÁΩÆ</font>
+			<form name= "form_ap_setting" method="post" action="do_cmd_cn.html">			
+            <div class="lab_4">
+                <div class="label">ÁΩëÁªúÂêçÁß∞ÔºàSSIDÔºâ</div>
+                <div class="tr"><input type="text" style="width:160px;height:20px" value="" name="ap_setting_ssid"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Ê®°ÂùóMACÂú∞ÂùÄ</div>
+                <div class="tr"><label style="width:160px;display:inline-block;text-align:right" id="ap_setting_mac"></label></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Êó†Á∫ø‰ø°ÈÅìÈÄâÊã©</div>
+                <div class="tr"><select style="width:160px;height:20px" name="ap_setting_freq">
+                    <option id="ap_FrequencyAS_lan_id" value="0" selected="">Ëá™Âä®ÈÄâÂèñ</option>
+		            <option value="1">2412MHz(‰ø°ÈÅì 1)</option>
+		            <option value="2">2417MHz(‰ø°ÈÅì 2)</option>
+		            <option value="3">2422MHz(‰ø°ÈÅì 3)</option>
+		            <option value="4">2427MHz(‰ø°ÈÅì 4)</option>
+		            <option value="5">2432MHz(‰ø°ÈÅì 5)</option>
+		            <option value="6">2437MHz(‰ø°ÈÅì 6)</option>
+		            <option value="7">2442MHz(‰ø°ÈÅì 7)</option>
+		            <option value="8">2447MHz(‰ø°ÈÅì 8)</option>
+		            <option value="9">2452MHz(‰ø°ÈÅì 9)</option>
+		            <option value="10">2457MHz(‰ø°ÈÅì 10)</option>
+		            <option value="11">2462MHz(‰ø°ÈÅì 11)</option>
+					</select>
+				</div>
+                <div class="cl"></div>
+                <div class="line"></div>			
+		    </div>
+			<div class="lab_4 tr"><input type="button" class="btn" value="‰øùÂ≠ò" onclick="ap_setting_apply()"/></div>
+			</form>					
+            <div class="line"></div>
+            <font class="white s15 b">Êó†Á∫øÊé•ÂÖ•ÁÇπÂÆâÂÖ®ËÆæÁΩÆ</font>
+		    <form name= "form_ap_secu_setting" method="post" action="do_cmd_cn.html">
+            <div class="lab_4">
+                <div class="label">Âä†ÂØÜÊ®°Âºè</div>
+				<input type="hidden" name="ap_setting_auth">
+                <div class="tr"><select id="div_5_4_wep" style="width:160px;height:20px" onchange="auth_change()" name="ap_setting_auth_sel">
+                    <option value="CLOSE" selected="">Disable</option>
+                    <option value="WPA2PSK">WPA2-PSK</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>
+				<div id="ap_key" style="visibility:hidden;display:none">
+                    <div class="label">ÂØÜÁ†Å</div>
+                    <div class="tr">
+					<input name="ap_setting_wpakey" type="password" class="text" id="wpa_key_text">
+					<div>
+				    <input onclick="wpa_key_check_changed()" type="checkbox" style="margin-left: 0px;"/>
+				    <font style="color:White;font-size:13px">ÊòæÁ§∫ÂØÜÁ†Å</font>
+				    </div>
+					</div>
+                    <div class="cl"></div>
+                    <div class="line"></div>
+                </div>
+			</div>
+            <div class="lab_4 tr"><input onclick="ap_secu_setting_apply()" type="button" class="btn" value="‰øùÂ≠ò"/></div>
+			</form>
+            <div class="line"></div>
+            <font class="white s15 b">Â±ÄÂüüÁΩëÂèÇÊï∞ËÆæÁΩÆ</font>
+			<form name= "form_lan_setting" method="post" action="do_cmd_cn.html">
+            <div class="lab_4">
+                <div class="label">IPÂú∞ÂùÄ(DHCPÁΩëÂÖ≥ËÆæÁΩÆ)</div>
+                <div class="tr"><input name="lan_setting_ip" type="text" style="width:160px" value="192.168.4.1"/></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Â≠êÁΩëÊé©Á†Å</div>
+                <div class="tr"><input name="lan_setting_msk" type="text" style="width:160px" value="255.255.255.0"/></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">DHCP Á±ªÂûã</div>
+                <div class="tr"><select style="width:160px" name="lan_setting_dhcp" >
+                    <option id="ap_DHCPDisable_lan_id" value="disable">ÂÅúÁî®</option>
+                    <option id="ap_DHCPServer_lan_id" value="enable" selected="">ÊúçÂä°Âô®</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>
+            </div>
+            <div class="lab_4 tr"><input type="button" class="btn" value="‰øùÂ≠ò" onclick="lan_setting_apply()"/></div>
+			</form>
+        </div>
+    </div>
+			<script type="text/javascript">
+			child_getH();
+		   </script>
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var ap_setting_ssid = "%s";
+var ap_setting_mac = "%s";
+var ap_setting_freq = "%d";
+var ap_setting_auth = "%s";
+var ap_setting_wpakey = "%s";
+var lan_setting_ip = "%s";
+var lan_setting_msk = "%s";
+var lan_setting_dhcp = "%s";
+
+	var height = 0;
+	function child_getH()
+	{
+		var nh = document.body.offsetHeight+200;
+		if(nh < 500)
+		{
+			nh = 500;
+		}
+		if(height != nh)
+		{
+			height = nh;
+			window.parent.child_height(height);
+		}
+	}
+	var wpa_key_show= "0";
+	function wpa_key_check_changed()
+	{
+		if (wpa_key_show == "1")
+		{
+			if (window.ActiveXObject)
+			{
+				document.all('ap_setting_wpakey').outerHTML="<input type=password maxlength=64 size=32 name=ap_setting_wpakey id=wep_key_text class='text' value='"+document.all('ap_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "password";
+			}
+			wpa_key_show="0";
+		}  
+		else
+		{
+			if (window.ActiveXObject)
+			{
+				document.all('ap_setting_wpakey').outerHTML="<input type=text maxlength=64 size=32 name=ap_setting_wpakey id=wep_key_text class='text' value='"+document.all('ap_setting_wpakey').value+"'>";
+			}
+			else
+			{
+				document.getElementById('wpa_key_text').type = "text";
+			}
+			wpa_key_show="1";
+		}
+	}	
+
+	function hide(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "hidden";
+			c.style.display = "none";
+		}
+	}
+		function show(v)
+	{
+		var c = document.getElementById(v);
+		if(c != null)
+		{
+			c.style.visibility = "visible";
+			c.style.display = "";
+		}
+	}
+	function auth_change()
+	{
+		var v=document.form_ap_secu_setting.ap_setting_auth_sel.options.selectedIndex;
+		if (v== 0)
+		{
+			hide("ap_key");
+		}
+		else
+		{
+			show("ap_key");
+		}
+	}	
+	function init_ap_setting()
+	{
+		var f=document.form_ap_setting;
+		f.ap_setting_ssid.value=ap_setting_ssid;
+		document.getElementById("ap_setting_mac").innerHTML= ap_setting_mac;
+		f.ap_setting_freq.value= ap_setting_freq;
+	}
+	function init_ap_seu()
+	{
+		var f=document.form_ap_secu_setting;
+		if (ap_setting_auth== "OPEN")
+			f.ap_setting_auth_sel.options.selectedIndex= 0;
+		else
+			f.ap_setting_auth_sel.options.selectedIndex= 1;
+		show("wpa");
+
+		f.ap_setting_wpakey.value= ap_setting_wpakey;		
+		auth_change();				
+	}
+	function init_lan_setting()
+	{
+		var f=document.form_lan_setting;
+		f.lan_setting_ip.value=lan_setting_ip;
+		f.lan_setting_msk.value=lan_setting_msk;
+		f.lan_setting_dhcp.value=lan_setting_dhcp;
+	}
+	function ap_setting_apply()
+	{
+		var f=document.form_ap_setting;
+		if(f.ap_setting_ssid.value=="")
+		{
+			alert("SSID is empty!");
+			return;
+		}
+		if(f.ap_setting_ssid.value.length>32)
+		{
+			alert("Please enter 1-32 characters!");
+			return;
+		}
+		f.submit();
+	}
+	function ap_secu_setting_apply()
+	{
+		var f=document.form_ap_secu_setting;
+		if (f.ap_setting_auth_sel.options.selectedIndex== 0)
+		{
+			f.ap_setting_auth.value= "OPEN";
+		}
+		else
+		{
+			f.ap_setting_auth.value= "WPA2PSK";
+		}
+		if((f.ap_setting_auth_sel.options.selectedIndex!=0)&&(f.ap_setting_wpakey.value == ""))
+		{
+			alert("The password is empty!");
+			return;
+		}
+		if((f.ap_setting_auth_sel.options.selectedIndex!=0)&&((f.ap_setting_wpakey.value.length <8)||(f.ap_setting_wpakey.value.length >64)))
+		{
+			alert("Please enter 8-63 characters!");
+			return;
+		}
+		f.submit();
+	}
+	function ipAdd(v)
+	{
+		var re=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+		return re.test(v);
+	}
+	function lan_setting_apply()
+	{
+		var f=document.form_lan_setting;
+		if(!ipAdd(f.lan_setting_ip.value))
+		{
+			alert("Invalid IP address!");
+			return;
+		}
+		if(!ipAdd(f.lan_setting_ip.value))
+		{
+			alert("Invalid subnet mask!");
+			return;
+		}
+		f.submit();
+	}
+	</script>
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_30
+{
+	width:10px;
+	height:30px;	
+}
+.lab_4
+{
+	color:white;
+	font-size:13px;
+}
+.tr
+{
+	text-align:right;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.sp_10
+{
+	width:10px;
+	height:10px;	
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init_ap_setting();init_ap_seu();init_lan_setting()">
+    <div class="div_c" style="font-family:Arial">
+        <div>
+            <font class="white s15 b">Wireless AP Setting</font>
+			<form name= "form_ap_setting" method="post" action="do_cmd_en.html">			
+            <div class="lab_4">
+                <div class="label">Network Name(SSID)</div>
+                <div class="tr"><input type="text" style="width:160px;height:20px" value="" name="ap_setting_ssid"></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Module MAC Address</div>
+                <div class="tr"><label style="width:160px;display:inline-block;text-align:right" id="ap_setting_mac"></label></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Select Channel</div>
+                <div class="tr"><select style="width:160px;height:20px" name="ap_setting_freq">
+                    <option id="ap_FrequencyAS_lan_id" value="0" selected="">Auto-select</option>
+		            <option value="1">2412MHz(channel 1)</option>
+		            <option value="2">2417MHz(channel 2)</option>
+		            <option value="3">2422MHz(channel 3)</option>
+		            <option value="4">2427MHz(channel 4)</option>
+		            <option value="5">2432MHz(channel 5)</option>
+		            <option value="6">2437MHz(channel 6)</option>
+		            <option value="7">2442MHz(channel 7)</option>
+		            <option value="8">2447MHz(channel 8)</option>
+		            <option value="9">2452MHz(channel 9)</option>
+		            <option value="10">2457MHz(channel 10)</option>
+		            <option value="11">2462MHz(channel 11)</option>
+					</select>
+				</div>
+                <div class="cl"></div>
+                <div class="line"></div>			
+		    </div>
+			<div class="lab_4 tr"><input type="button" class="btn" value="Save" onclick="ap_setting_apply()"/></div>
+			</form>					
+            <div class="line"></div>
+            <font class="white s15 b">Wireless AP Security Setting</font>
+		    <form name= "form_ap_secu_setting" method="post" action="do_cmd_en.html">
+            <div class="lab_4">
+                <div class="label">Encryption Mode</div>
+				<input type="hidden" name="ap_setting_auth">
+                <div class="tr"><select id="div_5_4_wep" style="width:160px;height:20px" onchange="auth_change()" name="ap_setting_auth_sel">
+                    <option value="CLOSE" selected="">Disable</option>
+                    <option value="WPA2PSK">WPA2-PSK</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>
+				<div id="ap_key" style="visibility:hidden;display:none">
+                    <div class="label">Password</div>
+                    <div class="tr">
+					<input name="ap_setting_wpakey" type="password" class="text" id="wpa_key_text">
+					<div>
+				    <input onclick="wpa_key_check_changed()" type="checkbox" style="margin-left: 0px;"/>
+				    <font style="color:White;font-size:13px">Show Passwords</font>
+				    </div>
+					</div>
+                    <div class="cl"></div>
+                    <div class="line"></div>
+                </div>
+			</div>
+            <div class="lab_4 tr"><input onclick="ap_secu_setting_apply()" type="button" class="btn" value="Save"/></div>
+			</form>
+            <div class="line"></div>
+            <font class="white s15 b">Network Parameters Setting</font>
+			<form name= "form_lan_setting" method="post" action="do_cmd_en.html">
+            <div class="lab_4">
+                <div class="label">P Address (DHCP Gateway Setting)</div>
+                <div class="tr"><input name="lan_setting_ip" type="text" style="width:160px" value="192.168.4.1"/></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Subnet Mask</div>
+                <div class="tr"><input name="lan_setting_msk" type="text" style="width:160px" value="255.255.255.0"/></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">DHCP Server</div>
+                <div class="tr"><select style="width:160px" name="lan_setting_dhcp" >
+                    <option id="ap_DHCPDisable_lan_id" value="disable">Disabled</option>
+                    <option id="ap_DHCPServer_lan_id" value="enable" selected="">Enable</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>
+            </div>
+            <div class="lab_4 tr"><input type="button" class="btn" value="Save" onclick="lan_setting_apply()"/></div>
+			</form>
+        </div>
+    </div>
+			<script type="text/javascript">
+			child_getH();
+		   </script>
+</body>
+</html>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var uart_setting_baud = "%d";
+var net_setting_pro = "%s";
+var net_setting_cs = "%s";
+var net_setting_port = "%d";
+var net_setting_ip = "%s";
+var net_setting_to = "%d";
+
+	var height = 0;
+	function child_getH()
+	{
+		var nh = document.body.offsetHeight+100;
+		if(nh < 500)
+		{
+			nh = 500;
+		}
+		if(height != nh)
+		{
+			height = nh;
+			window.parent.child_height(height);
+		}
+	}
+	function init_uart_setting()
+	{
+		var f=document.form_uart_setting;
+		f.uart_setting_baud.value=uart_setting_baud;
+	}
+	function init_net_setting()
+	{
+		var f=document.form_net_setting;
+		if ((net_setting_pro== "TCP")&&(net_setting_cs== "SERVER"))
+			f.net_setting_pro_sel.options.selectedIndex= 0;
+		else if ((net_setting_pro== "TCP")&&(net_setting_cs== "CLIENT"))
+			f.net_setting_pro_sel.options.selectedIndex= 1;
+		else if((net_setting_pro== "UDP")&&(net_setting_cs== "SERVER"))
+			f.net_setting_pro_sel.options.selectedIndex= 2;
+		else
+			f.net_setting_pro_sel.options.selectedIndex= 3;
+		f.net_setting_port.value=net_setting_port;
+		f.net_setting_ip.value=net_setting_ip;
+		f.net_setting_to.value=net_setting_to;
+		internetSet();
+	}
+function enableCon(c,v)
+{
+    var con = document.getElementById(c);
+    if(con  != null)
+    {
+        if(v == 1)
+        {
+            con.disabled = "disabled";
+        }
+        else
+        {
+            con.disabled = "";
+        }
+    }
+}
+function internetSet()
+{
+	var pro = document.getElementById("div_5_3_tcp");
+	if(pro != null)
+	{
+		if(pro.options.selectedIndex == 0)
+		{
+			enableCon("div_5_3_server",2);
+			enableCon("div_5_3_add",1);
+			enableCon("div_5_3_conn",2);
+			enableCon("div_5_3_time",2);
+		}
+		else if (pro.options.selectedIndex == 1)
+		{
+			enableCon("div_5_3_server",2);
+			enableCon("div_5_3_add",2);
+			enableCon("div_5_3_conn",1);
+			enableCon("div_5_3_time",2);
+		}else if(pro.options.selectedIndex == 2)
+		{
+			enableCon("div_5_3_server",2);
+			enableCon("div_5_3_add",1);
+			enableCon("div_5_3_conn",2);
+			enableCon("div_5_3_time",1);			
+		}
+		else
+		{
+			enableCon("div_5_3_server",1);
+			enableCon("div_5_3_add",2);
+			enableCon("div_5_3_conn",1);
+			enableCon("div_5_3_time",1);
+		}
+	}
+}
+function uart_setting_apply()
+{
+	var f=document.form_uart_setting;
+	f.submit();
+}
+function checkPort(v)
+{
+	var re=/^[0-9]\d*$/;
+	return re.test(v);
+}
+function ipAdd(v)
+{
+    var re=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+    return re.test(v);
+}
+function net_setting_apply()
+{
+	var f=document.form_net_setting;
+	if (f.net_setting_pro_sel.options.selectedIndex== 0)
+	{
+		f.net_setting_pro.value="TCP";
+		f.net_setting_cs.value="SERVER";
+	}
+	else if (f.net_setting_pro_sel.options.selectedIndex== 1)
+	{
+		f.net_setting_pro.value="TCP";
+		f.net_setting_cs.value="CLIENT";
+	}
+	else if (f.net_setting_pro_sel.options.selectedIndex== 2)
+	{
+		f.net_setting_pro.value="UDP";
+		f.net_setting_cs.value="SERVER";
+	}else{
+		f.net_setting_pro.value="UDP";
+		f.net_setting_cs.value="CLIENT";
+	}
+	if(parseInt(f.net_setting_port.value)>=65535)
+	{
+		alert("Á´ØÂè£Êï∞ÂÄºÂøÖÈ°ªÂ∞è‰∫é65535ÔºÅ");
+		return;
+	}
+	if(!checkPort(f.net_setting_port.value))
+	{
+		alert("Á´ØÂè£‰∏çÊ≠£Á°ÆÔºÅ");
+		return;
+	}
+	if(!checkPort(f.net_setting_to.value))
+	{
+		alert("TCPË∂ÖÊó∂ËÆæÁΩÆ‰∏çÊ≠£Á°ÆÔºÅ");
+		return;
+	}
+	if(parseInt(f.net_setting_to.value)>600)
+	{
+		alert("TCPË∂ÖÊó∂ËÆæÁΩÆÂøÖÈ°ªÂ∞è‰∫éÁ≠â‰∫é600ÁßíÔºÅ");
+		return;
+	}
+	f.submit();
+}
+	</script>
+<style>
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.lab_4
+{
+	color:white;
+	font-size:13px;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.tr
+{
+	text-align:right;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init_uart_setting();init_net_setting()">
+    <div class="div_c" style="font-family:ÂæÆËΩØÈõÖÈªë">
+        <div id="port_cn">
+            <font class="white s15 b">‰∏≤Âè£ÂèÇÊï∞ËÆæÁΩÆ</font>
+			<form name= "form_uart_setting" method="post" action="do_cmd_cn.html">			
+            <div class="lab_4">
+                <div class="label">Ê≥¢ÁâπÁéá</div>
+                <div class="tr"><select style="width:160px;height:20px" name="uart_setting_baud">
+                    <option value="4800">4800</option>
+                    <option value="9600">9600</option>
+                    <option value="19200">19200</option>
+                    <option value="38400">38400</option>
+                    <option value="57600">57600</option>
+                    <option selected="selected" value="115200">115200</option>
+                    <option value="230400">230400</option>
+                    <option value="380400">380400</option>
+                    <option value="460800">460800</option>
+                    <option value="921600">921600</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>			
+            </div>
+			<div class="lab_4 tr"><input onclick="uart_setting_apply()" type="button" class="btn" value="‰øùÂ≠ò"/></div>	            
+			</form>			
+            <div class="line"></div>
+            <font class="white s15 b">ÁΩëÁªúÂèÇÊï∞ËÆæÁΩÆ</font>
+			<form name= "form_net_setting" method="post" action="do_cmd_cn.html">
+			<input type="hidden" name="net_setting_pro">
+			<input type="hidden" name="net_setting_cs">
+            <div class="lab_4">
+                <div class="label">ÂçèËÆÆ</div>
+                <div class="tr"><select name="net_setting_pro_sel" id="div_5_3_tcp" style="width:160px;height:20px" onclick="internetSet()">
+                    <option value="TCPSERVER">TCP-Server</option>
+                    <option value="TCPCLIENT">TCP-Client</option>
+                    <option value="UDPS">UDP-Server</option>
+                    <option value="UDP">UDP-Client</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Á´ØÂè£</div>
+                <div class="tr"><input name="net_setting_port" id="div_5_3_port" type="text" style="width:160px;height:20px" /></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">ÊúçÂä°Âô®Âú∞ÂùÄ</div>
+                <div class="tr"><input name="net_setting_ip" id="div_5_3_add" type="text" style="width:160px;height:20px" /></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+
+                <div class="label">TCPË∂ÖÊó∂ËÆæÁΩÆ </div>
+                <div class="tr"><input name="net_setting_to" id="div_5_3_time" type="text" style="width:160px;height:20px" /></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+            </div>
+            <div class="lab_4 tr"><input onclick="net_setting_apply()" type="button" class="btn" value="‰øùÂ≠ò"/></div>
+			</form>
+        </div>
+    </div>
+			<script type="text/javascript">
+			child_getH();
+		   </script>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                Ôªø<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<script type="text/javascript">
+var uart_setting_baud = "%d";
+var net_setting_pro = "%s";
+var net_setting_cs = "%s";
+var net_setting_port = "%d";
+var net_setting_ip = "%s";
+var net_setting_to = "%d";
+
+	var height = 0;
+	function child_getH()
+	{
+		var nh = document.body.offsetHeight+100;
+		if(nh < 500)
+		{
+			nh = 500;
+		}
+		if(height != nh)
+		{
+			height = nh;
+			window.parent.child_height(height);
+		}
+	}
+	function init_uart_setting()
+	{
+		var f=document.form_uart_setting;
+		f.uart_setting_baud.value=uart_setting_baud;
+	}
+	function init_net_setting()
+	{
+		var f=document.form_net_setting;
+		if ((net_setting_pro== "TCP")&&(net_setting_cs== "SERVER"))
+			f.net_setting_pro_sel.options.selectedIndex= 0;
+		else if ((net_setting_pro== "TCP")&&(net_setting_cs== "CLIENT"))
+			f.net_setting_pro_sel.options.selectedIndex= 1;
+		else if((net_setting_pro== "UDP")&&(net_setting_cs== "SERVER"))
+			f.net_setting_pro_sel.options.selectedIndex= 2;
+		else
+			f.net_setting_pro_sel.options.selectedIndex= 3;
+		f.net_setting_port.value=net_setting_port;
+		f.net_setting_ip.value=net_setting_ip;
+		f.net_setting_to.value=net_setting_to;
+		internetSet();
+	}
+function enableCon(c,v)
+{
+    var con = document.getElementById(c);
+    if(con  != null)
+    {
+        if(v == 1)
+        {
+            con.disabled = "disabled";
+        }
+        else
+        {
+            con.disabled = "";
+        }
+    }
+}
+function internetSet()
+{
+	var pro = document.getElementById("div_5_3_tcp");
+	if(pro != null)
+	{
+		if(pro.options.selectedIndex == 0)
+		{
+			enableCon("div_5_3_server",2);
+			enableCon("div_5_3_add",1);
+			enableCon("div_5_3_conn",2);
+			enableCon("div_5_3_time",2);
+		}
+		else if (pro.options.selectedIndex == 1)
+		{
+			enableCon("div_5_3_server",2);
+			enableCon("div_5_3_add",2);
+			enableCon("div_5_3_conn",1);
+			enableCon("div_5_3_time",2);
+		}else if(pro.options.selectedIndex == 2)
+		{
+			enableCon("div_5_3_server",2);
+			enableCon("div_5_3_add",1);
+			enableCon("div_5_3_conn",2);
+			enableCon("div_5_3_time",1);			
+		}
+		else
+		{
+			enableCon("div_5_3_server",1);
+			enableCon("div_5_3_add",2);
+			enableCon("div_5_3_conn",1);
+			enableCon("div_5_3_time",1);
+		}
+	}
+}
+function uart_setting_apply()
+{
+	var f=document.form_uart_setting;
+	f.submit();
+}
+function checkPort(v)
+{
+	var re=/^[0-9]\d*$/;
+	return re.test(v);
+}
+function ipAdd(v)
+{
+    var re=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+    return re.test(v);
+}
+function net_setting_apply()
+{
+	var f=document.form_net_setting;
+	if (f.net_setting_pro_sel.options.selectedIndex== 0)
+	{
+		f.net_setting_pro.value="TCP";
+		f.net_setting_cs.value="SERVER";
+	}
+	else if (f.net_setting_pro_sel.options.selectedIndex== 1)
+	{
+		f.net_setting_pro.value="TCP";
+		f.net_setting_cs.value="CLIENT";
+	}
+	else if (f.net_setting_pro_sel.options.selectedIndex== 2)
+	{
+		f.net_setting_pro.value="UDP";
+		f.net_setting_cs.value="SERVER";
+	}else{
+		f.net_setting_pro.value="UDP";
+		f.net_setting_cs.value="CLIENT";
+	}
+	if(parseInt(f.net_setting_port.value)>=65535)
+	{
+		alert("Max. Port is no more than 65535!");
+		return;
+	}
+	if(!checkPort(f.net_setting_port.value))
+	{
+		alert("Incorrect Port setting!");
+		return;
+	}
+	if(!checkPort(f.net_setting_to.value))
+	{
+		alert("Incorrect TCP time out setting!");
+		return;
+	}
+	if(parseInt(f.net_setting_to.value)>600)
+	{
+		alert("Max. TCP time-out period is no more than 600s!");
+		return;
+	}
+	f.submit();
+}
+	</script>
+<style>
+.in_body
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:transparent;
+}
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.lab_4
+{
+	color:white;
+	font-size:13px;
+}
+.label
+{
+	float:left;
+	width:50%;
+	color:white;
+	margin-bottom:-2px;
+	font-size:13px;
+}
+.cl
+{
+	clear:left;
+}
+.line
+{
+	height:1px;
+	background-color:white;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.tr
+{
+	text-align:right;
+}
+.btn
+{
+	width:66px;
+	height:27px;
+	border-style:none;
+	border-radius:3px 3px 3px 3px;
+	font-size:14px;
+	color:#0163AC;
+	cursor:pointer;
+}
+</style>
+</head>
+<body class="in_body" onload="init_uart_setting();init_net_setting()">
+    <div class="div_c" style="font-family:Arial">
+        <div id="port_cn">
+            <font class="white s15 b">Serial Port Parameters Setting</font>
+			<form name= "form_uart_setting" method="post" action="do_cmd_en.html">			
+            <div class="lab_4">
+                <div class="label">Baud Rate</div>
+                <div class="tr"><select style="width:160px;height:20px" name="uart_setting_baud">
+                    <option value="4800">4800</option>
+                    <option value="9600">9600</option>
+                    <option value="19200">19200</option>
+                    <option value="38400">38400</option>
+                    <option value="57600">57600</option>
+                    <option selected="selected" value="115200">115200</option>
+                    <option value="230400">230400</option>
+                    <option value="380400">380400</option>
+                    <option value="460800">460800</option>
+                    <option value="921600">921600</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>			
+            </div>
+			<div class="lab_4 tr"><input onclick="uart_setting_apply()" type="button" class="btn" value="Save"/></div>	            
+			</form>			
+            <div class="line"></div>
+            <font class="white s15 b">Network Parameters setting</font>
+			<form name= "form_net_setting" method="post" action="do_cmd_en.html">
+			<input type="hidden" name="net_setting_pro">
+			<input type="hidden" name="net_setting_cs">
+            <div class="lab_4">
+                <div class="label">Protocol</div>
+                <div class="tr"><select name="net_setting_pro_sel" id="div_5_3_tcp" style="width:160px;height:20px" onclick="internetSet()">
+                    <option value="TCPSERVER">TCP-Server</option>
+                    <option value="TCPCLIENT">TCP-Client</option>
+                    <option value="UDPS">UDP-Server</option>
+                    <option value="UDP">UDP-Client</option></select>
+                </div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Port ID</div>
+                <div class="tr"><input name="net_setting_port" id="div_5_3_port" type="text" style="width:160px;height:20px" /></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+                <div class="label">Server Address</div>
+                <div class="tr"><input name="net_setting_ip" id="div_5_3_add" type="text" style="width:160px;height:20px" /></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+
+                <div class="label">TCP Time Out Setting</div>
+                <div class="tr"><input name="net_setting_to" id="div_5_3_time" type="text" style="width:160px;height:20px" /></div>
+                <div class="cl"></div>
+                <div class="line"></div>
+            </div>
+            <div class="lab_4 tr"><input onclick="net_setting_apply()" type="button" class="btn" value="Save"/></div>
+			</form>
+        </div>
+    </div>
+			<script type="text/javascript">
+			child_getH();
+		   </script>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                    âPNG
+
+   IHDR   0   0   W˘á  iCCPICC Profile  HâïWXS…û[R	-)°7AzïﬁãÄt∞í °H*vdQ¡µ†b¡äÆäÿ÷»¢"¢XXÏıÅà  ∫X¿Ç õ–ıµÔùÔõ;ŒúsÊ?sœùÃ †hÕ ÕÕBï »ÊÁ¢}ò	âILR7 M¿ é¿Ñ≈ÊzGFÜ(c˝ﬂe¯6@ƒ˝Kq¨ˇØ¢Ã·
+Ÿ  ëßpÑÏlàOÄ´≥s˘ ⁄†ﬁ`N~ÆB¨*Ä ‚bú&≈Íbú"≈ì$61Qæ{@¶≤XÇ4 ƒºôÏ4GAÃ—öœ·Ò!ﬁ±;ù≈Å¯!ƒì≤≥s V$ClöÚ]ú¥ø≈Lè…b•çci.!˚ÒÑπY¨yˇÁr¸o…ŒçÕ°5]%ŒÆ€ÅÃúP1¶B‹»O	èÄX‚À<éƒ^åÔßãÇbeˆl°/\3¯û
+8,øPàµ fà2cΩeÿñ%ê¯B{4úó#√)Çú(Y|¥Äü&ã≥"ù<ÜwpÖ˛—c6©ºÄ`àa•°'”c‚•<—ñ^\8ƒ
+w3£Ceæè”}√«l¢(1gCàﬂ•
+¢§6òz∂p,/ÃäÕíÃkÛ Oè	í˙b	\aBÿ◊œ_ „p˘±2n¨.ü(ôoInV§Ã€¡Õ
+åíÆ3vLX=Ê€ïL∫ÿìVH§lÆ·‹¸»)7a¿¯&¡ñr@‡µ‘¿_“ë ¿ê∏¿R¶Ûàóå·3Ç?!‚·∏üèdî
+†˛À∏V˙¥©í—âG&xq6Æâ{‡nx|z¡fã;„.c~L≈±Yâ˛D?b1Äh6ŒÉYg¡& º£Ö=f'Ê¬À·[<¬3B'·	·°õpƒÅßí(2´Ÿº"¡Ãô`*ËÜ—dŸ•¿ò˝c6∏1dÌÄ˚‡Óê?‰é3pM`â€√LºqOòõ‘~œP4ŒÌ€Z˛8üòı˜˘»Ù
+Ê
+2)„o∆w‹Í«(æﬂ≠ˆ°?Zb+∞X+vªÇ5buÄâù√Í±6ÏåèW¬SI%åÕ%·ñ	„∆l¨k¨˚≠?ˇ07K6øxΩÑ˘‹π˘‚è¡7'wûÄóñûœÙÜª1óÃg[Mb⁄Z€8 ﬁ€•[«[ÜdœFWøÈÚö p)Ö ¥o:ñ ßü@˛¶3xÀ}- g:ÿ"AÅT'ﬁéPÄ"¸*4Ä0 ¶0[¯‚ºÄ? $ÇYp≈”A6‰<, KA	(k¡F∞Ï{¿pu†úó¿5–nÅ∞.˙¿K0Ü¡Ç $ÑÜ–D1B,[ƒÒ@¸ë0$
+IDíë4Ñèàê»2§)G∂"ªëj‰W‰4rπÇt"˜ê§yÉ|B1îä™¢⁄®1:uFΩ—P4ùâ¶°yh!ZåÆF7£UË!¥=è^Co°›ËKtò<∆¿Ù0KÃÛ≈"∞$,`ã∞R¨´¬é`=ﬂ¿∫±Ï#NƒÈ8∑ÑµÑ«‚l<_ÑØ¬∑‚ZºøÅ˜‡É¯Wç†E∞ ∏Ç		Ñ4¬B	°Ç∞èpäp~7}Ña"ë» öù‡wôHÃ Œ'Æ"n'%6;âΩƒ!â§A≤ πì"H,R>©Ñ¥Ötàté‘EÍ#} Àìu…∂‰ rôO."Wêíœíª»œ…#rJrFrÆrrπyrk‰ˆ 5»]óÎì°(SL(ÓîJe)e3ÂÂ"Â!Â≠ºººæºã¸4yû¸˘ÕÚ«‰/À˜»§™PÕ©æ‘Tu5u?µâzè˙ñF£”ºhI¥|⁄jZ5ÌÌ1ÌÉ]¡J!XÅ£∞X°R°V°K·ï¢ú¢ë¢∑‚,≈B≈
+≈ä◊î‰îåï|ïXJãî*ïN+›QR¶+€(G(g+ØR>®|E˘Ö
+I≈X≈_Ö£R¨≤GÂÇJ/£–}Èl˙2˙^˙Ezü*Q’D5X5CµLı∞jªÍ†öäöΩZú⁄\µJµ3j›åaÃfd1÷0é3n3>M–û‡=Å;aÂÑ#∫&ºWü®Ó•ŒU/U?™~K˝ìS√_#ScùFù∆#M\”\söÊÕö5&™Ntõ»ûX:Ò¯ƒ˚Z®ñπVî÷|≠=ZmZC⁄:⁄Å⁄π⁄[¥/hË0tºt2t6Ëú’È◊•ÎzËÚt7Ëû”˝É©∆Ùff173[òÉzZzAz"Ω›zÌz#˙&˙±˙E˙GıPúR64ÍN5\`XcxﬂHŒ»Ÿ(›hìQ´—{c„x„Â∆u∆/L‘MÇM
+MjLö“L=MÛL´LoöÕúÕ2Õ∂õuò£ÊÊÈÊïÊ◊-PGû≈vãŒIÑI.ì¯ì™&›±§Zz[X÷XˆX1¨¬¨ä¨Í¨^M6úú4y›‰÷…_≠¨≥¨˜Z?∞Q±	±)≤i∞ycknÀ∂≠¥ΩiG≥∞[lWo˜⁄ﬁ¬ûkø√˛Æ›a™√ráfá/éNé«#é˝NÜN…N€úÓ8´:G:ØræÏBpÒqYÏ“ËÚ—’—5ﬂı∏Î_nñnôn›^L1ô¬ù≤wJØªæ;À}∑{∑”#ŸcóG∑ßû'À≥ ÛâóÅ«kü◊so3ÔÔCﬁØ|¨}>ß|ﬁ˚∫˙.ÙmÚ√¸˝J˝⁄˝U¸c˝∑˙?–H®	túÿD
+Zt'X;ò\<‚≤0§%î∫5ÙIòyò ¨a*:5dÍ˙©√ç¬˘·u "8b}ƒ£Hì»º»ﬂ¶ßEN´úˆ, &jATk4=zvÙ¡Ë·üò51bMcE±Õqäq3‚™„ﬁ«˚≈ó«w'LNXòp-Q3ëóXüDJäK⁄ó44›˙∆È}3fîÃ∏=”dÊ‹ôWfiŒ öuf∂‚l÷Ï…Ñ‰¯‰É…üY¨*÷PJp ∂îA∂/{˚%«ã≥Å”œuÁñsüß∫ßñßæHsO[ü÷üÓô^ë>¿ÛÂmÂΩŒ ÿôÒ>3"sÊhV|÷—lrvrˆiæ
+?ìﬂí£ì37ß3◊"∑$∑;œ5ocﬁ† T∞Oàg
+ÎÛU·1ßMd*˙I‘S‡QPYaN‹úsïÁÚÁ∂Õ3ü∑rﬁÛ¬Ä¬_Ê„ÛŸÛõË-X∫†g°˜¬›ãêE)ãö,.^‹∑$p…Å•î•ôK/≤.*/z∑,~YC±vÒí‚ﬁü™)Q(î‹YÓ∂|Á
+|oE˚Jªï[V~-Âî^-≥.´(˚ºäΩÍÍœ6?o˛ytuÍÍˆ5ékv¨%ÆÂØΩΩŒs›ÅrÂÚ¬ÚﬁıS◊◊n`n(›n„ÏçW*Ï+vn¢lmÍﬁ∂π~ã·ñµ[>oMﬂz´“ßÚË6≠m+∑ΩﬂŒŸﬁµ√k«ëù⁄;Àv~⁄≈€uww‡Ó⁄*„™ä=ƒ={ûÌç€€˙ãÛ/’˚4˜ïÌ˚≤üøø˚@‘ÅñjßÍÍÉZ◊‘†5¢ö˛C3uˆ;\ƒÚ»Ó£å£e«¿1—±?~M˛ıˆÒ–„Õ'úO9itr€)˙©“Z§v^Ì`]z]w}b}ÁÈê”Õnß~≥˙m£^cÂµ3kŒRŒü=Wxn®)∑i‡|⁄˘ﬁÊŸÕ.$\∏Ÿ2≠•˝bË≈Àó.]hın=wŸ˝r„◊+ßØ:_≠ªÊx≠∂Õ°Ì‘ÔøüjwlØΩÓtΩæ√•£°sJÁŸ.œÆÛ7¸n\∫|Û⁄≠[ù∑coﬂΩ3„N˜]Œ›˜≤ÓΩæ_p‰¡íáÑá•èîU<÷z\ı≥ÌvÏ>”„◊”ˆ$˙…É^vÔÀß¬ßü˚äü—ûU<◊}^˝¬ˆEc@«”ˇË{ô˚rd†‰OÂ?∑Ω2}uÚ/Øø⁄˚^^èæYıV„Ì˛wˆÔöá"ágèº/˝†Ò·¿GÁè≠ü‚?=ôÛôÙyÛ≥/_Cø>ÕÕe	Xí£ öö
+¿õ˝ –·Ÿ° äÇÙÓ%Dz_î ü∞Ù~&xrŸÔ@Ï ¬‡elFSa/>z«x‘Œnº…Dòjg+çEÖ7¬á——∑⁄ ê ¯"Ÿ>:˙e/${Ä¶<ÈùO,Dxæﬂe.F◊ßh,?»?’∂l>Wp«§   	pHYs  %  %IR$  :iTXtXML:com.adobe.xmp     <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 5.4.0">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:exif="http://ns.adobe.com/exif/1.0/"
+            xmlns:tiff="http://ns.adobe.com/tiff/1.0/">
+         <exif:PixelYDimension>416</exif:PixelYDimension>
+         <exif:PixelXDimension>416</exif:PixelXDimension>
+         <tiff:ResolutionUnit>2</tiff:ResolutionUnit>
+         <tiff:Orientation>1</tiff:Orientation>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+!7…Ä  xIDATh’YytT◊yˇçF≥h4⁄W	d 6	ô’Ï,«ˆiù∏«)N[ßiCúsj∑nlÁ8=IzzßƒÆ}Nc76ò‘é„§66f1j6Éd#6H !	$$°m4“hÎÔwgﬁ$ ¡ˇÙ¥ﬂ—ºwﬂΩﬂ˝Ó∑ﬂÔ^9ñ?˙ã!¸?Üò[Ê˝ˇ®ò∑.¿-K˙øãxs˛ò∆5~3ú/”o«µ∑oEƒøπ åÄÉ˙›æLøpø,„∂5cmÌ·M;7[`DˇàœaÙÏ‰¢Vßıé‹bÉÛÆ`$#âﬂ`‹AS8à√áﬁˆ)B‚càèAΩ-uõÅõ0™1ÅŸ€¶s¯„z¨’5—"yã5‰2ÜŒ#ÜDOﬂ Ç˝ÉËcªèú
+◊…q·ËÁqÚÁäÅãc¯-Åà'°Ö˛ÉÉÔ®ÏÌ·|GøÆ :ƒÜE B\¶9‘’€è≥m!4$	¶&π1:—ço,‚‹NIâ~	Dw_?Æv˜·h[/∫Çƒ'√…q1òò‡Ê;Œó0D7¬B¸àÅ]°˙fˇp,D
+8A ë[Hs‘.uÑp‚js≥‚ËπòñüâúQ)HKMÄﬂÁÅ+÷	ßSπ¡Å¡¡A25¿ÈÈCGg⁄:∫—–ÿéÍ∫´8V’å-5ùfëy)n$≈π∏'æµnîy√–ıè∞ b\“Ÿ!¬º¸⁄EÛKÉ•≠!<<5O?íè‚iπC∆„…ÙóY&Ï√’ˆ.¸C]3éú®√÷√5¯¯b'Ê¶∫ë‚sQà∞ãIy√Ñ¡ß„∫R""å4`˘©+ALLç√∑,ƒÚÖSêAm[–CWÍ
+Ù ¿_ˇÄYKq°_,]Cz\.x<.∏7Ç>∆O›•V(=ãM;N·ËÂ 
+3‚çÖ&Ñ%PDê·¡<èù¨õ?ﬂyd&›ñe÷ojÈƒŸÍÀ8S’à™⁄‘_	†•£óÅ@q‚§À≈πcêëÏE≤ﬂãÏt?rF'c‹ò4åïäÙTøP%X^n∫˘Õª}ﬁ˛†œm9ãY^S!&á®‚—alRIÛr1±£.Ä}%Î]Å‰D/.÷∑bœ¡
+l=pUµ°ãöÀÒƒ â?/˝^(√hÊ©À]Ë&çƒÌe¸NÚ«bﬁ¯d,öïÉ˘≈∑Q)Ÿzb/F„˘yô¯ª«Va‚∏t<˚fô°ÂgbË`tX|öU¬è∞E4ØU’TŸV€ÖÁJ&‡Ôø]ü◊Öèv√+Ô¡ˆÍ6¶{êN?u Dê‡a∞t#u\C1Ã(Õ∂v˜„x[¶$yÿ]Ò’í"L»Õ0„
+|ß”…6ﬁˆ#¯óM•àß%•úAÂ\"¬8Û
+◊¸–Ù±C„Ò'æhÍ∆É”2Ã∫ª·£Ôæºa7÷æxâå◊Y£‚·sqN‚Z‡J"lﬁjs ¸B?øá¯aæ˘PÜ#~j|2≥éó!ÒÍ¡:Tûºàº,?r«¶qèà¡ı(;zûÌXÑzB®®oßa°,˛≠w¨•!IÏf–uˆÙÉá«ø±I	>ºÙÀùxÚó«Q23…ò∏;D?àÄMπaÛF˙EKnË•o[Ó§òË•ı—bb(Öè•€≠…O∆È¶ ¯Ò|ú”§„Ô˝t;vÌªÇysR0)õÇ1ÅËR⁄H7∂xbÿyÆØ¸E1
+Ú«‚√ü„…WèauqäIk“¥,$JJsΩVpâqC=¨}•]	Wz)ÄfmtZï+-Õé£{∆"»`W>íÖ§∞¸¥8‘∑˜`˝¶ÉóùàñŒ^¨YûÅJz¬¶˝p0µ.LÛöù\qe¬ƒÄ4¶›∞ïπæo»Å_ˇ¯±ÑØ>ı;${&/k¢¥p∞!®ï1=À√ù◊ìÊÑqA—È°ï>mÓ≈„«b~Q.‹ÆXúf∆˙èﬂWQéA‹FÜ-KJP…nYüFBJúU‹,óONC!7 ¶÷.Ï=yŸî,^∫Ø]cpQ˚eıA<ˇ4§$˘ÒŒááPAfÔõôÇj∫æ=ÑTüØ=6õÆÂ≈ˆ}Áp∞™πLìJs‚¬CóËÊæPO≠ø˘◊Û±j…4§&«ç≠‚N|≥Œ˙_ƒæÌòìÌ3t•<iT÷Lêu	5,9øg
+Z3óÛ}–>1s˜1<˝F)rí¬mÑ n¨(eY≥Ä¶ü5-≠mùxwœ9Á∆Å¡≈´=(ùÄÔˇ’RÃö>ŒdüÈìs˝üÔ@ms ¨iDP%Ä≤À∆ø]à5wœc‚ éôlÒº|dg&·≈ç{ÒfY=çÒk!à™ÕO^êÁ∆ EïôhÊzËv≥ÛPêı™π^nä◊XPÇ3úh>2^œgıƒDd•'¢™¶	˚*:ëCƒ∆ˆ^§˘=xˆ[ÀId|î©Ç¸l¨]3Â-!¨\¿Å›u›x·ÎE∏gUë¡kÔ≤\Ë6å2}*E*œ?ı≠;±vŒhî1FL·ñ”<¸ä/’NÇP(¸ˆQ®±È>4ˆ0~∏ûÒ;æò&¬%√ôé>LÕMÊÆËB˝‹úD¨î˛„üœ√¨π¢Gp†Øøﬂ¥ÊÂ·°iiFÁö{›E9x`ı,∫cŒûoƒÛøÿâß∫üØA›K000¿9èØ]äey…®n!»3”Ì‚òπ*©Ã∆ÊvÉÔdq(PÅË¶ˇá§qÅÑ à«∞0Ù≥—ô	&ßW≤<òöÈAi}~tO>ñ-òbêUM∂∂u≥'Ø¨Ù$î,»√ﬁùÕ»ªÒËÉ≥Mâp••/nÿáﬁzè\¬ˇ∫Â')S©¿≤ƒwûœµô∫Yÿ)¯%Ñ¯Í° }¨´D6ÁZ1LÅ#ë~#Ä∂iŸ%…á 7é˙Ênì]Úô()dAÊ6ƒ∑Ì˛È•mh£ksä∆cÓäL<˘lœg˙∑Ì>ÅW∏AïLHƒ›yâ¯úµ“˙˚Y∞]•&ôE»à`˛Ïâ¯õ’ì±ˇJèq1#+ƒì3W¬úÉ!÷[=H„Æ¨ò±Ä®<QItäÊßØ´voc ùkÏ≈#%SX´å2∏GO‘‡Â˜é„•´±kˇik>}:ÔˇÏ!‹Ωl∫È;~™ol=â9ì]Dk	ÉuS˘|∞Û+÷!√ú‹–Mw)Y:%9âÊú°çØó ÕCNjR|t5öZ;qÜUj&S¨bDû#0P†SïL,”Ìø¿Ω3”∞dﬁ$S)∂∂∞iÛgÊdµ∏ Øn>ä j∆	¡CøïïÑ8ô‹ÎWƒ+g˘ùÓwôc¶ Èg]Ú?wV‚‘Ÿ:3/R)ab^6Ó]òá„åA˘EÄŸprñ£≥SûÂvjõQŒ8K‰°Gªπ·?¨w3.ä§∫e@æW¬ü‹9	y9ÈÜ»ﬁC¯∑OÎ1öÈ2Å⁄)øLFﬂ/5;"~›M?~wK÷ÔØ5ßµ5-–∞ l•⁄Éú∑˜Yì◊cú≤B,3‡ÇYy(Nı†=»≥c±xR&≤2)è é(õ=›`“ºvyS‘E,¿}Ä&eÑ˜qKó˚¯‚X±MÙ£`‚(„„óõ:ﬁÆ3œ KÅ¶˝¢(√ã◊?π¿¬lÓ[9√‘4ªú¡˙-g∞àcb]f6ÈémX}Sì\ÿUVã’Àö1a|&{¬ê7.ã&ß„øÒt£yÖ„†‹Øå•ò©·©mÁ±KòüÊfl^sÕ6ôÏëãÍã≠àÛzëÔãA=ÆkR˝˝>™hAaö«òNA¶g
+kìWwW„≠µÃ∏1®Ù¢òÃ;9f
+6i(l„Ø*‰∆Ú‡ˇ~UæYŸ`à5eÛw~ä¶d„•ÌÕ%cP»„™@Ã˜qá.=v•›∏'?—î3ñ˚«Ñ∫jÙôdËì£,cœ4";ﬁâM[O`˜·Û8S◊ÜIâ.,ñVeBœLÏªYI®â‹Ú©«b^ã’$
+üJZπ¸T=ñﬂ1	<©i£rª]œRÌX≥l22“¸§ˆc(¿ÖãW€=g©è°-z& " 	ßU~»‹™i™X⁄∂”ùj[Çx∑ºÅ.3`jÒh‰W…ıt§L¢
+Sm{ë]»4¬s˙≥Èü–€ÃàòË¶‚kwç¡“ìÕ∑òW¥sﬂiÏ†’FÒ#+jmªr¨dK°òNá1ÖıwÛ~ké,û¥™ä”¯≥§ﬂjö=ÑaıG4£f¥-°˘)•≈ªQﬁƒéΩßÈ:Ò«{πSü«∆mßìÔ,7≈ü6:Ôn~?€¸ñéı1ΩÜ˜é(M≥Ä\àîïÊ|‘dek&f'‡±á‡‡gïxÚÕ„∏oFj∏⁄˙çÄaåè◊∑Mh≥Rê‚¡∆è+Pq˛
+O|±xaG~Û‘bÃfi2D%ä˘ÜÀÌ¯˜_ÇCâÖÓ÷¬¢'"m„BjK;ìN\A{g +O√wïÕAì:çƒåÙ=≤œ—†.πôRg&˜kƒ??É◊◊Õ≈˝¨^uqÊpƒ†£´oº{8>)√= E…Y¥˘6≈ú¥(W–°bw∫óﬁ>d
+ß¸Â"Ó~=∏⁄B¢7|ñ£ B6b¶ﬂﬁß~ké¨¨∂v[	–»ÇM∑}Ôºæ
+vˇ|≥a
+!–¬F2ˇÏGï(Î7~•k|X<}-àŸRFô¬•m’ùxks©9Væ˜Ã
+®ÍBœ~
+!!-Üå01qı€qtêWïÈÊ~”¡ÕJ◊5cYgΩˆƒ
+<pw1s~∏‚lk‚µ∑ˆ·Òﬂ«™—>c≠p⁄∂1m≠y;ÛäÆ›JHy∫Y.†+Ω˛È%‰∆ı„ûïE∏´(€ÀjXbtc˜›”Ë@.ˇÜaÛ~(≈j\∑—bZd≠X÷⁄ãt˙¸,‡æ∑ñ>?sº)ì5Î¸≈fº≤Ò<≥µÇÃ«∫ˆÃg([÷’;sµhiëbF∑–.˛îæûˇ⁄4¨˝”Öhk‡ÌÕe¯·é*Ã ¶1f∆ªåKﬂ•Wπcê)O˜?Áy≠¸±ò◊1wè¡
+ÊˇBû˙T€‰2áÀ´ÒÚ€á±Î|;åÚô|]JÚµeÙe‡ö î !dv’€œub›“¨˚∆bm)®8Wèˇ>TâﬂVáèu≥‹ÀIJ∆"l“p`-5#”áÈy©(*Ö¬©9,‹≤¢ñÎfy|ñ·ñ›'ÒÏ∂≥òÈwbLí◊úç£ncX¸√è·◊&Ñ\AA∑óõÒ‘ˆôç%
+∏É∆·Í’N‘÷7£¶æÖßßNÙˆˆô@’%nvFÇπr◊®Ñ÷’°Mƒ≠∫–ÑüUa„û*ú‰ëu%]F
+”¡^†§b¯0_ëá˙Fy`ày"ñ–ßèA¶ÎıO´∏Væ~Wnßˇfgí9Ø€,®EÕœöy´ñinÈ¿≈ÜTT7°Ïd=~[ﬁàKÅ› g.ouÎ°Úƒ®á≈áΩ-z!BXØ® ö`A@z—¡_UÎynvßz0ôY‚+Öôò9)ã∑Õ…HÊÆœ3Å‚A•uk[._È@MC*kØ‚s^•úd=ü∆:KuóÍ"i\Òbñ∂òµﬁb–juåÄ® #˙ÕÁ°‹πîÃ›†EZzÖ<?P∞DnL„|Ns7§ˇï]dvéH†˛úó9å»J™õLÜ·ÿuÓb1k_ﬂﬁ6Ø=Æ9Áµæk&¥&Úm"éËa˜ÊÍ_BLΩdXn–ÀbMuL¢€Å€YOy\^sÁ§ML%Ñn„,íä˘a†oZˆq{{ÿ§H9ù§A∏D˙-ATz0nç`
+vOX<Ì≥ÀZÚiπH–öß!2ÂE˝˙àåGﬂˆæëm¢GÒ‘&Ñ-• {€†‹¯aòâ‡*ÌR√ã/µ5<L”ˆA!n¥ûΩœﬁæ˛ç]»P∂=D‰FãGP,´Ës‰zîÀ>ho[H`e‰˚ tsµØ˝Ä„    IENDÆB`Ç                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Ôªø<html>
+<head> 
+<title>do_cmd</title>    
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_50
+{
+	width:10px;
+	height:50px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+</style>
+</HEAD>
+<body class="in_body">
+<iframe  width="0px" height="0px" id="cmd_iframe_id" style="border-style:none"></iframe>
+<form name= "form_do_cmd" method="post" action="success_cn.html">
+<INPUT type=hidden name=QLZ_PROCESS_CMD value=RESTART>
+<div id="lang_cn_id" class="div_c white" style="font-family:ÂæÆËΩØÈõÖÈªë;font-size:13px;">
+    <div class="s15 b">‰øùÂ≠òÊàêÂäüÔºÅ</div>
+    <div class="sp_50"></div>
+    <div class="lab_4">ÈáçÂêØËÆæÂ§áÂêéÈÖçÁΩÆÊâçËÉΩÁîüÊïà„ÄÇ<br />ÈáçÂêØ‰πãÂêéÔºåÊÇ®ÈúÄË¶ÅÈáçÊñ∞ÁôªÂΩïÈÖçÁΩÆÁïåÈù¢ËøõË°åÂÖ∂‰ªñÈÖçÁΩÆÔºåÂª∫ËÆÆÊÇ®Âú®ÂÆåÊàêÊâÄÊúâËÆæÁΩÆÂêéÂÜçÈáçÂêØ„ÄÇ<br />ËØ∑ÁÇπÂáª[ÈáçÂêØ]ÊåâÈîÆÁ´ãÂç≥ÈáçÂêØÔºõÊàñÁÇπÂáª[ËøîÂõû]ÊåâÈîÆÁªßÁª≠ÈÖçÁΩÆ„ÄÇ<br />ÊÇ®ÂèØ‰ª•Âú®ÂÆåÊàêÊâÄÊúâËÆæÁΩÆÂêéÈÄâÊã©ËèúÂçïÊ†è‰∏≠ÁöÑÈáçÂêØÂäüËÉΩËøõË°åÈáçÂêØ„ÄÇ
+        <div class="sp_50"></div>
+        <div style="width:380px" class="tr"><input type="button" class="btn" value="ÈáçÂêØ" style="margin-right:20px" onClick="submit()"/><input type="button" class="btn" value="ËøîÂõû" onClick="window.parent.child_cn(1)"/></div>
+    </div>
+</div>
+</form>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Ôªø<html>
+<head> 
+<title>do_cmd</title>    
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<style>
+.div_c
+{
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.white
+{
+	color:White;
+}
+.s15
+{
+	font-size:15px;
+}
+.b
+{
+	font-weight:bold;
+}
+.sp_50
+{
+	width:10px;
+	height:50px;	
+}
+.lab_4
+{
+	margin-left:70px;
+	margin-right:50px;
+	color:white;
+	font-size:13px;
+}
+</style>
+</HEAD>
+<body class="in_body">
+<iframe  width="0px" height="0px" id="cmd_iframe_id" style="border-style:none"></iframe>
+<form name= "form_do_cmd" method="post" action="success_en.html">
+<INPUT type=hidden name=QLZ_PROCESS_CMD value=RESTART>
+<div id="lang_cn_id" class="div_c white" style="font-family:Arial;font-size:13px;">
+    <div class="s15 b">Saved Successfully!</div>
+    <div class="sp_50"></div>
+    <div class="lab_4">Configurations will take effect after restart.<br />After restart, you will need to re-login the configuration interface for other settings, so it is recommended to restart after completing all settings.<br />Please click [Restart] to restart now, or click [Back] to continue setting.<br />You can restart after all configuration.
+        <div class="sp_50"></div>
+        <div style="width:380px" class="tr"><input type="button" class="btn" value="Restart" style="margin-right:20px" onClick="submit()"/><input type="button" class="btn" value="Back" onClick="window.parent.child_cn(1)"/></div>
+    </div>
+</div>
+</form>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<title>survey</title>
+<script language="JavaScript" type="text/javascript">
+function selectedSSIDChange(ssid, bssid, channel, auth, encry)
+{
+	parent.set_value(ssid, bssid, channel, auth, encry);
+}
+</script>
+<style>
+.s15
+{
+	font-size:15px;
+}
+.tab_t
+{
+	border-top:solid 1px white;
+}
+.tab_l
+{
+	border-left:solid 1px white;
+}
+.tab_r
+{
+	border-right:solid 1px white;
+}
+.tab_b
+{
+	border-bottom:solid 1px white;
+}
+</style>
+</head>
+<body style="margin-top:0px;margin-left:0px;margin-right:0px;margin-bottom:0px;background-color:#006699">
+<table><tr><td>
+<form method=post name="sta_site_survey">
+<table width="500" border="0" style="border-style:none;border-spacing:0px;color:White;font-size:13px;font-family:Arial;border-collapse:collapse;">
+  <tr>
+    <td class="s15" colspan="5" id="scanSiteSurvey">Site Survey</td>
+  </tr>
+  <tr>
+    <td id="scanSelect">&nbsp;</td>
+    <td class="tab_l tab_t tab_r tab_b" id="scanSSID">SSID</td>
+    <td class="tab_t tab_r tab_b" id="scanBSSID">BSSID</td>
+    <td class="tab_t tab_r tab_b" id="scanRSSI">RSSI</td>
+    <td class="tab_t tab_r tab_b" id="scanChannel">Channel</td>
+  </tr>
+>
