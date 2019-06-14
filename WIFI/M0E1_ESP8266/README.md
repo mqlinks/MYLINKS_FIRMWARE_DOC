@@ -4,6 +4,8 @@
 
 请先下载M0E1系列模块下载，打开后选择ESP8266，具体连接：[点击查看](https://share.weiyun.com/5Oi0xqG)
 
+![menu](PNG/menu.png)
+
 ### 2 工具配置
 
 SPI SPEED:80MHz
@@ -16,6 +18,8 @@ DoNotChgBin:勾选
 
 固件烧写位置：
 
-user1.1024.new.2.bin  0x1000
+user1.1024.new.2.bin 0x1000
 
-user2.1024.new.2.bin  0x81000
+user2.1024.new.2.bin 0x81000
+
+![download](PNG\download.png)
