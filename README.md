@@ -42,13 +42,13 @@ ESP8266官文档整理:[点击查看](https://share.weiyun.com/54gLeAb)
 
 手机SMARTCONFIG代码:[IOS](https://github.com/EspressifApp/EsptouchForIOS) | [Android](https://github.com/EspressifApp/EsptouchForAndroid)
 
-### 1.3 其它工具
+### 1.3 其它代码及工具
+
+微信公众号AIRKISS:[点击查看](/WIFI/WECHAT_AIRKISS)
 
 电脑端MQTT工具:[点击查看](https://share.weiyun.com/5H6Xqws)
 
 电脑端调试工具:[点击查看](https://share.weiyun.com/5WFd0fc)
-
-
 
 ## 联系我们
 
