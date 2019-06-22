@@ -2,7 +2,7 @@
 
 该项目目前主要由 [劢领智能](https://www.mqlinks.com) 进行维护，并期待您的参与。
 
-## 1.WIFI项目
+## 一.WIFI项目
 
 **WIFI部分相应使用方法：[点击查看](https://blog.csdn.net/mqlinks)**
 
