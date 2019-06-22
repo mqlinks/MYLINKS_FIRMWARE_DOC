@@ -22,4 +22,6 @@ user1.1024.new.2.bin 0x1000
 
 user2.1024.new.2.bin 0x81000
 
+#### 特别注意：如果有spiff_rom.bin，则下载至地址0x100000
+
 ![download](PNG/download.png)
