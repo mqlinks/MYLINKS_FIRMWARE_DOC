@@ -1,6 +1,6 @@
 # M0E1系列WIFI模块AT指令(MQTT透传)版本说明
 
-## 一.WIFI项目
+## 一.WIFI固件下载
 
 **MQTT版本固件下载地址：[点击查看](https://share.weiyun.com/5a3ot7B)**
 
