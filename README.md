@@ -12,7 +12,7 @@ M0M1系列模组数据手册:[点击查看](https://share.weiyun.com/59yfp5N)
 
 AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/at_webs)
 
-AT固件内置网页源码:[点击查看](/WIFI/M0M1_WI6800/AT)
+AT固件内置网页源码:[点击查看](/WIFI/M0M1_WI6800/AT/at_webs)
 
 模组PCB封装：[点击查看](https://share.weiyun.com/5ceV1OJ)
 
