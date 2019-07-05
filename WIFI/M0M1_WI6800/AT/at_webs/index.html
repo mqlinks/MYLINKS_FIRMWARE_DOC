@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.1.1.min.css.mo">
+<script src="jquery-1.8.3.min.js.mo"></script>
+<script src="jquery.mobile-1.1.1.min.js.mo"></script>
+<script src="mylinkslib.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+	getWifiInfo();
+	ButtonCheckInit();
+});
+</script>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false">
+    <a href="#" data-role="button" data-icon="alert" class="ksaveh">保存</a>
+    <h1>M0M1系列模组</h1>
+    <a href="#" data-role="button" data-icon="refresh" class="krefreshh">重置</a>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="info" class="ui-btn-active ui-state-persist">状态</a></li>
+        <li><a href="#pagetwo" data-icon="grid">热点</a></li>
+        <li><a href="#pagethree" data-icon="search">路由</a></li>
+        <li><a href="#pagefour" data-icon="home">通讯</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+	  <li data-role="list-divider">模组信息</li>
+      <li>软件版本<span class="ui-li-aside" id='ver'></span></li>
+	  <li>网页版本<span class="ui-li-aside">v1.0.01</span></li>
+      <li>工作模式<span class="ui-li-aside" id='mode'></span></li>
+      <li data-role="list-divider">AP模式</li>   
+      <li>SSID<span class="ui-li-aside" id='assid'></span></li>
+	  <li>IP地址<span class="ui-li-aside" id='aip'></span></li>
+	  <li>MAC地址<span class="ui-li-aside" id='amac'></span></li>
+	  <li data-role="list-divider">STA模式</li>
+	  <li>路由SSID<span class="ui-li-aside" id='ssid'></span></li>
+	  <li>连接状态<span class="ui-li-aside" id='stats'></span></li>
+	  <li>信号强度<span class="ui-li-aside" id='signal'></span></li>
+	  <li>IP地址<span class="ui-li-aside" id='ip'></span></li>
+	  <li>MAC地址<span class="ui-li-aside" id='mac'></span></li>
+      </li>
+    </ul>
+  </div>
+
+  <div data-role="footer"  data-theme="b">
+    <h1>浙江劢领智能科技科技有限公司</h1>
+	<h2>www.mqlinks.com</h2>
+  </div>
+</div>
+
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header"  data-theme="b" data-position="fixed" data-tap-toggle="false">
+    <a href="#" data-role="button" data-icon="alert" class="ksaveh">保存</a>
+    <h1>M0M1系列模组</h1>
+    <a href="#" data-role="button" data-icon="refresh" class="krefreshh">重置</a>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="info">状态</a></li>
+        <li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">热点</a></li>
+        <li><a href="#pagethree" data-icon="search">路由</a></li>
+        <li><a href="#pagefour" data-icon="home">通讯</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <li data-role="list-divider">参数设置</li> 	  
+      <li><a href="#swssidh" data-transition="slidefade">网络SSID<span class="ui-li-aside" id='wssid'></span></a></li>
+	  <li>MAC地址<span class="ui-li-aside" id='wmac'></span></li>
+	  <li><a href="#swchnh" data-transition="slidefade">信道选择<span class="ui-li-aside" id='wchn'></span></a></li>
+      <li><a href="#sweph" data-transition="slidefade">密码设置<span class="ui-li-aside" id='wep'></span></a></li>
+
+      <li data-role="list-divider">局域网设置</li>   
+      <li><a href="#siph" data-transition="slidefade">IP地址<span class="ui-li-aside" id='wip'></span></a></li>
+	  <li><a href="#smaskh" data-transition="slidefade">子网掩码<span class="ui-li-aside" id='wmask'></span></a></li>
+	  <li><a href="#sdhcph" data-transition="slidefade">DHCP类型<span class="ui-li-aside" id='wdhcp'></span></a></li>
+      </li>
+    </ul>
+  </div>
+
+  <div data-role="footer"  data-theme="b">
+    <h1>浙江劢领智能科技科技有限公司</h1>
+	<h2>www.mqlinks.com</h2>
+  </div>
+</div>
+
+
+
+<div data-role="page"  id="swssidh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagetwo" data-role="button" data-icon="grid"   data-transition="slidefade"  data-direction="reverse" id='btwo_1'>热点</a>
+    <h1>网络SSID</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="iwssid" id="iwssid">
+  </div>
+</div>
+
+<div data-role="page"  id="swchnh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagetwo" data-role="button" data-icon="grid"   data-transition="slidefade"  data-direction="reverse"  id='btwo_2'>热点</a>
+    <h1>信道选择</h1>
+  </div>
+  <div data-role="content">
+      <select name="wchns" id="wchns"  data-native-menu="false">
+		<option value="1">2412MHz(信道 1)</option>
+		<option value="2">2417MHz(信道 2)</option>
+		<option value="3">2422MHz(信道 3)</option>
+		<option value="4">2427MHz(信道 4)</option>
+		<option value="5">2432MHz(信道 5)</option>
+		<option value="6">2437MHz(信道 6)</option>
+		<option value="7">2442MHz(信道 7)</option>
+		<option value="8">2447MHz(信道 8)</option>
+		<option value="9">2452MHz(信道 9)</option>
+		<option value="10">2457MHz(信道 10)</option>
+		<option value="11">2462MHz(信道 11)</option>
+		<option value="12">2467MHz(信道 12)</option>
+		<option value="13">2472MHz(信道 13)</option>
+	  </select>
+  </div>
+</div>
+
+<div data-role="page"  id="sweph">
+  <div data-role="header" data-theme="b">
+    <a href="#pagetwo" data-role="button" data-icon="grid"   data-transition="slidefade"  data-direction="reverse" id='btwo_3'>热点</a>
+    <h1>密码设置</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="iwep" id="iwep">
+  </div>
+</div> 
+
+<div data-role="page"  id="siph">
+  <div data-role="header" data-theme="b">
+    <a href="#pagetwo" data-role="button" data-icon="grid"   data-transition="slidefade"  data-direction="reverse" id='btwo_4'>热点</a>
+    <h1>IP地址</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="sip" id="sip">
+  </div>
+</div>
+
+<div data-role="page"  id="smaskh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagetwo" data-role="button" data-icon="grid"   data-transition="slidefade"  data-direction="reverse" id='btwo_5'>热点</a>
+    <h1>子网掩码</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="smask" id="smask">
+  </div>
+</div>
+
+<div data-role="page"  id="sdhcph">
+  <div data-role="header" data-theme="b">
+    <a href="#pagetwo" data-role="button" data-icon="grid"   data-transition="slidefade"  data-direction="reverse" id='btwo_6'>热点</a>
+    <h1>DHCP类型</h1>
+  </div>
+  <div data-role="content">
+      <select name="wdhcps" id="wdhcps">
+		<option value="0">CLOSE</option>
+		<option value="1">OPEN</option>
+	  </select>
+  </div>
+</div>
+
+<div data-role="page" id="pagethree">
+  <div data-role="header" data-theme="b"   data-position="fixed" data-tap-toggle="false">
+    <a href="#" data-role="button" data-icon="alert" class="ksaveh">保存</a>
+    <h1>M0M1系列模组</h1>
+    <a href="#" data-role="button" data-icon="refresh" class="krefreshh">重置</a>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="info">状态</a></li>
+        <li><a href="#pagetwo" data-icon="grid">热点</a></li>
+        <li><a href="#" data-icon="search"   class="ui-btn-active ui-state-persist">路由</a></li>
+        <li><a href="#pagefour" data-icon="home">通讯</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <li data-role="list-divider">参数设置</li> 	  
+      <li><a href="#kswssidh" data-transition="slidefade">路由SSID<span class="ui-li-aside" id='sssid'></span></a></li>
+	  <li>MAC地址<span class="ui-li-aside" id='ssmac'></span></li>
+      <li><a href="#ksweph" data-transition="slidefade">密码设置<span class="ui-li-aside" id='sswep'></span></a></li>
+
+      <li data-role="list-divider">局域网设置</li>
+	  <li><a href="#kdhcph" data-transition="slidefade">DHCP使能<span class="ui-li-aside" id='ssdhcp'></span></a></li>	  
+      <li><a href="#ksiph" data-transition="slidefade">IP地址<span class="ui-li-aside" id='ssip'></span></a></li>
+	  <li><a href="#kmaskh" data-transition="slidefade">子网掩码<span class="ui-li-aside" id='ssmask'></span></a></li>
+	  <li><a href="#kgwh" data-transition="slidefade">网关地址<span class="ui-li-aside" id='ssgw'></span></a></li>
+	  <li>DNS服务器<span class="ui-li-aside" id='ssdns'></span></li>
+      </li>
+    </ul>
+  </div>
+
+  <div data-role="footer"  data-theme="b">
+    <h1>浙江劢领智能科技科技有限公司</h1>
+	<h2>www.mqlinks.com</h2>
+  </div>
+</div>
+<div data-role="page"  id="kswssidh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagethree" data-role="button" data-icon="search"   data-transition="slidefade"  data-direction="reverse" id='bthr_1'>路由</a>
+    <h1>路由SSID</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="siwssid" id="siwssid">
+  </div>
+</div>
+<div data-role="page"  id="ksweph">
+  <div data-role="header" data-theme="b">
+    <a href="#pagethree" data-role="button" data-icon="search"   data-transition="slidefade"  data-direction="reverse" id='bthr_2'>路由</a>
+    <h1>密码设置</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="siwep" id="siwep">
+  </div>
+</div>
+<div data-role="page"  id="kdhcph">
+  <div data-role="header" data-theme="b">
+    <a href="#pagethree" data-role="button" data-icon="search"   data-transition="slidefade"  data-direction="reverse" id='bthr_3'>路由</a>
+    <h1>DHCP使能</h1>
+  </div>
+  <div data-role="content">
+      <select name="kdhcps" id="kdhcps">
+		<option value="0">CLOSE</option>
+		<option value="1">OPEN</option>
+	  </select>
+  </div>
+</div>
+<div data-role="page"  id="ksiph">
+  <div data-role="header" data-theme="b">
+    <a href="#pagethree" data-role="button" data-icon="search"   data-transition="slidefade"  data-direction="reverse" id='bthr_4'>路由</a>
+    <h1>IP地址</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="ksip" id="ksip">
+  </div>
+</div>
+<div data-role="page"  id="kmaskh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagethree" data-role="button" data-icon="search"   data-transition="slidefade"  data-direction="reverse" id='bthr_5'>路由</a>
+    <h1>子网掩码</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="kmask" id="kmask">
+  </div>
+</div>
+<div data-role="page"  id="kgwh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagethree" data-role="button" data-icon="search"   data-transition="slidefade"  data-direction="reverse" id='bthr_6'>路由</a>
+    <h1>网关地址</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="kgw" id="kgw">
+  </div>
+</div>
+
+
+<div data-role="page" id="pagefour">
+  <div data-role="header" data-theme="b"   data-position="fixed" data-tap-toggle="false">
+    <a href="#" data-role="button" data-icon="alert" class="ksaveh">保存</a>
+    <h1>M0M1系列模组</h1>
+    <a href="#" data-role="button" data-icon="refresh" class="krefreshh">重置</a>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-icon="info">状态</a></li>
+        <li><a href="#pagetwo" data-icon="grid">热点</a></li>
+        <li><a href="#pagethree" data-icon="search">路由</a></li>
+        <li><a href="#" data-icon="home"  class="ui-btn-active ui-state-persist">通讯</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+	  <li data-role="list-divider">模式设置</li>
+      <li><a href="#kmodeh" data-transition="slidefade">模式选择<span class="ui-li-aside" id='smode'></span></a></li>
+	  <li data-role="list-divider">网络设置</li>
+      <li><a href="#ktypeh" data-transition="slidefade">协议<span class="ui-li-aside" id='stype'></span></a></li>
+	  <li><a href="#kserverh" data-transition="slidefade">服务器地址<span class="ui-li-aside" id='sserver'></span></a></li>
+	  <li><a href="#kporth" data-transition="slidefade">端口<span class="ui-li-aside" id='sport'></span></a></li>
+	  <li><a href="#ktimeouth" data-transition="slidefade">TCP超时设置<span class="ui-li-aside" id='stimeout'></span></a></li>
+      <li data-role="list-divider">串口设置</li>   
+      <li><a href="#kbaudh" data-transition="slidefade">波特率<span class="ui-li-aside" id='sbaud'></span></a></li>
+	  <li><a href="#kstoph" data-transition="slidefade">停止位<span class="ui-li-aside" id='sstop'></span></a></li>
+	  <li><a href="#ksparh" data-transition="slidefade">校验位<span class="ui-li-aside" id='spar'></span></a></li>
+      <li data-role="list-divider">网页设置</li>   
+      <li><a href="#kuserh" data-transition="slidefade">账号<span class="ui-li-aside" id='suser'></span></a></li>
+	  <li><a href="#kkeyh" data-transition="slidefade">密码<span class="ui-li-aside" id='skey'></span></a></li>
+    </ul>
+  </div>
+
+  <div data-role="footer"  data-theme="b">
+    <h1>浙江劢领智能科技科技有限公司</h1>
+	<h2>www.mqlinks.com</h2>
+  </div>
+</div>
+
+<div data-role="page"  id="kmodeh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_1'>通讯</a>
+    <h1>模式选择</h1>
+  </div>
+  <div data-role="content">
+      <select name="kmode" id="kmode">
+		<option value="0">STA</option>
+		<option value="1">AP</option>
+		<option value="2">APSTA</option>
+	  </select>
+  </div>
+</div>
+<div data-role="page"  id="ktypeh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_2'>通讯</a>
+    <h1>协议</h1>
+  </div>
+  <div data-role="content">
+      <select name="ktype" id="ktype">
+		<option value="0">TCP-Server</option>
+		<option value="1">UDP-Server</option>
+		<option value="2">TCP-CLient</option>
+		<option value="3">UDP-CLient</option>
+	  </select>
+  </div>
+</div>
+<div data-role="page"  id="kserverh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_3'>通讯</a>
+    <h1>服务器地址</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="kserver" id="kserver">
+  </div>
+</div>
+<div data-role="page"  id="kporth">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_4'>通讯</a>
+    <h1>端口</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="kport" id="kport">
+  </div>
+</div>
+<div data-role="page"  id="ktimeouth">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_5'>通讯</a>
+    <h1>TCP超时设置</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="ktimeout" id="ktimeout">
+  </div>
+</div>
+<div data-role="page"  id="kbaudh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="grid"   data-transition="slidefade"  data-direction="reverse"  id='bfour_6'>热点</a>
+    <h1>波特率</h1>
+  </div>
+  <div data-role="content">
+      <select name="kbaud" id="kbaud"  data-native-menu="false">
+		<option value="0">1200</option>
+		<option value="1">2400</option>
+		<option value="2">4800</option>
+		<option value="3">9600</option>
+		<option value="4">19200</option>
+		<option value="5">38400</option>
+		<option value="6">57600</option>
+		<option value="7">115200</option>
+		<option value="8">230400</option>
+		<option value="9">460800</option>
+		<option value="10">500000</option>
+		<option value="11">576000</option>
+		<option value="12">921600</option>
+		<option value="13">1000000</option>
+		<option value="14">1152000</option>
+		<option value="15">1500000</option>
+	  </select>
+  </div>
+</div>
+<div data-role="page"  id="kstoph">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_7'>通讯</a>
+    <h1>停止位</h1>
+  </div>
+  <div data-role="content">
+      <select name="kstop" id="kstop">
+		<option value="1">1bit</option>
+		<option value="2">2bit</option>
+	  </select>
+  </div>
+</div>
+<div data-role="page"  id="ksparh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_8'>通讯</a>
+    <h1>校验位</h1>
+  </div>
+  <div data-role="content">
+      <select name="kpar" id="kpar">
+		<option value="0">NONE</option>
+		<option value="1">ODD</option>
+		<option value="2">EVEN</option>
+	  </select>
+  </div>
+</div>
+<div data-role="page"  id="kuserh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_9'>通讯</a>
+    <h1>账号</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="kuser" id="kuser">
+  </div>
+</div>
+<div data-role="page"  id="kkeyh">
+  <div data-role="header" data-theme="b">
+    <a href="#pagefour" data-role="button" data-icon="home"   data-transition="slidefade"  data-direction="reverse" id='bfour_10'>通讯</a>
+    <h1>密码</h1>
+  </div>
+  <div data-role="content">
+    <input type="text" name="kkey" id="kkey">
+  </div>
+</div>
+</body>
+</html>
