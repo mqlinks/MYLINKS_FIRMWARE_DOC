@@ -26,7 +26,7 @@ AT固件内置网页源码:[点击查看](/WIFI/M0M1_WI6800/AT/at_webs)
 
 ### 1.2 M0E1系列(ESP8266)
 
-M0E1系列模组数据手册:[点击查看](https://share.weiyun.com/5kEkc6Q)
+M0E1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=agu3FSUR)
 
 AT透传MQTT固件：[点击查看](/WIFI/M0E1_ESP8266/MQTT)
 
@@ -48,9 +48,9 @@ ESP8266官文档整理:[点击查看](https://share.weiyun.com/54gLeAb)
 
 微信公众号AIRKISS:[点击查看](/WIFI/WECHAT_AIRKISS)
 
-电脑端MQTT工具:[点击查看](https://share.weiyun.com/5H6Xqws)
+电脑端MQTT工具:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=hbwN5kUE)
 
-电脑端调试工具:[点击查看](https://share.weiyun.com/5WFd0fc)
+电脑端调试工具:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=a9pU2gZH)
 
 ## 联系我们
 
