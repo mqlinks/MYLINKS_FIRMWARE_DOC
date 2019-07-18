@@ -8,19 +8,19 @@
 
 ### 1.1 M0M1系列(WI6800)
 
-M0M1系列模组数据手册:[点击查看](https://share.weiyun.com/59yfp5N)
+M0M1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=qHFDuW3V)
 
-AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/at_webs)
+AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/AT)
 
 AT固件内置网页源码:[点击查看](/WIFI/M0M1_WI6800/AT/at_webs)
 
-模组PCB封装：[点击查看](https://share.weiyun.com/5ceV1OJ)
+模组PCB封装：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=9QvTKuDq)
 
-相关原理图：[点击查看](https://share.weiyun.com/53I131Q)
+相关原理图：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=HehGnrUp)
 
-相关认证：[点击查看](https://share.weiyun.com/5fOMFyV)
+相关认证：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=ICYUyMAX)
 
-相关工具下载:[点击查看](https://share.weiyun.com/5cwCA7V)
+相关工具下载:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=4j59Hp8y)
 
 劢领智能M88WI6800K_V2.3:[点击查看](https://gitee.com/mqlinks/MYLINKS_M88WI6800K_V2.3)
 
