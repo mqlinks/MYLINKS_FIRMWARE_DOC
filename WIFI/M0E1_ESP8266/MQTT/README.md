@@ -2,7 +2,7 @@
 
 ## 一.WIFI固件下载
 
-**MQTT版本固件下载地址：[点击查看](https://share.weiyun.com/5a3ot7B)**
+**MQTT版本固件下载地址：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=IfrKCUMb)**
 
 ## 二.版本说明
 

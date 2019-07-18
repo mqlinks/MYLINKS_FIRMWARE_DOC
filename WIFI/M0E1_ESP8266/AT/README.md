@@ -2,7 +2,7 @@
 
 ## 一.WIFI固件下载
 
-**标准AT版本固件下载地址：[点击查看](https://share.weiyun.com/5C81bIH)**
+**标准AT版本固件下载地址：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=WF2uYeh5)**
 
 ## 二.版本说明
 

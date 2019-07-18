@@ -2,7 +2,7 @@
 
 ### 1. 工具下载
 
-请先下载M0E1系列模块下载，打开后选择ESP8266，具体连接：[点击查看](https://share.weiyun.com/5Oi0xqG)
+请先下载M0E1系列模块下载，打开后选择ESP8266，具体连接：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=Di6XTcsn)
 
 ![menu](PNG/menu.png)
 
