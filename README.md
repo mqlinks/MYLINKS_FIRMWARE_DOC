@@ -24,6 +24,8 @@ AT固件内置网页源码:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplo
 
 劢领智能M88WI6800K_V2.3:[点击查看](https://gitee.com/mqlinks/MYLINKS_M88WI6800K_V2.3)
 
+编译器下载: [点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=W7HJbgc2)
+
 ### 1.2 M0E1系列(ESP8266)
 
 M0E1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=agu3FSUR)
