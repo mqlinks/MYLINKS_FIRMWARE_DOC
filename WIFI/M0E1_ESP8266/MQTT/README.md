@@ -5,6 +5,9 @@
 **MQTT版本固件下载地址：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=IfrKCUMb)**
 
 ## 二.版本说明
+## 发布日期:2019.11.21 版本号:3.0.0.033
+
+1.当发送的数据大于2048时，将自动分包。
 
 ## 发布日期:2019.11.4 版本号:3.0.0.032
 
