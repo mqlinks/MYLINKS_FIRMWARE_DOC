@@ -5,6 +5,10 @@
 **标准AT版本固件下载地址：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=WF2uYeh5)**
 
 ## 二.版本说明
+## 发布日期:2019.12.7 版本号:3.0.0.54
+
+1.优化AP配网功能中UDP的实现方式。
+
 
 ## 发布日期:2019.11.20 版本号:3.0.0.53
 
