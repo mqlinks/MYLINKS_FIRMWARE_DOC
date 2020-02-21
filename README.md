@@ -6,27 +6,8 @@
 
 **WIFI部分相应使用方法：[点击查看](https://blog.csdn.net/mqlinks)**
 
-### 1.1 M0M1系列(WI6800)
 
-M0M1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=qHFDuW3V)
-
-AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/AT)
-
-AT固件内置网页源码:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=xibQaNmG)
-
-模组PCB封装：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=9QvTKuDq)
-
-相关原理图：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=HehGnrUp)
-
-相关认证：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=ICYUyMAX)
-
-相关工具下载:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=4j59Hp8y)
-
-劢领智能M88WI6800K_V2.3:[点击查看](https://gitee.com/mqlinks/MYLINKS_M88WI6800K_V2.3)
-
-编译器下载: [点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=W7HJbgc2)
-
-### 1.2 M0E1系列(ESP8266)
+### 1.1 M0E1系列(ESP8266)
 
 M0E1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=agu3FSUR)
 
@@ -47,6 +28,28 @@ ESP8266官文档整理:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/
 劢领智能ESP8266_RTOS_SDK:[点击查看](https://gitee.com/mqlinks/MYLINKS_ESP8266_RTOS_SDK-2.0.0)
 
 手机SMARTCONFIG代码:[IOS](https://github.com/EspressifApp/EsptouchForIOS) | [Android](https://github.com/EspressifApp/EsptouchForAndroid)
+
+
+### 1.2 M0M1系列(WI6800)
+
+M0M1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=qHFDuW3V)
+
+AT+HTTP+MQTT多合一固件:[点击查看](/WIFI/M0M1_WI6800/AT)
+
+AT固件内置网页源码:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=xibQaNmG)
+
+模组PCB封装：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=9QvTKuDq)
+
+相关原理图：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=HehGnrUp)
+
+相关认证：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=ICYUyMAX)
+
+相关工具下载:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=4j59Hp8y)
+
+劢领智能M88WI6800K_V2.3:[点击查看](https://gitee.com/mqlinks/MYLINKS_M88WI6800K_V2.3)
+
+编译器下载: [点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=W7HJbgc2)
+
 
 ### 1.3 其它代码及工具
 
