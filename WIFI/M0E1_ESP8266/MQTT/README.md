@@ -2,6 +2,8 @@
 
 ## 一.WIFI固件下载
 
+**ESP8266系列固件烧写方式：[点击查看](https://github.com/mqlinks/MYLINKS_FIRMWARE_DOC/tree/master/WIFI/M0E1_ESP8266)**
+
 **MQTT版本固件下载地址：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=IfrKCUMb)**
 
 ## 二.版本说明
