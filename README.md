@@ -66,6 +66,11 @@ AT固件内置网页源码:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplo
 
 电脑端调试工具:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=a9pU2gZH)
 
+## 二.蓝牙项目
+
+### 2.1 M0B1系列
+**M0B1系列模组AT指令使用方法：[点击查看](https://blog.csdn.net/mqlinks/category_9414446.html)**
+
 ## 联系我们
 
 技术邮箱: support@mqlinks.com
