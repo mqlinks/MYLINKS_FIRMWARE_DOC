@@ -73,6 +73,14 @@ AT固件内置网页源码:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplo
 ### 2.1 M0B1系列
 **M0B1系列模组AT指令使用方法：[点击查看](https://blog.csdn.net/mqlinks/category_9414446.html)**
 
+M0B1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=NDwqx5jn)
+
+相关原理图：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=x6QBDCRr)
+
+模组PCB封装：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=IJFigWzn)
+
+
+
 ## 联系我们
 
 技术邮箱: support@mqlinks.com
