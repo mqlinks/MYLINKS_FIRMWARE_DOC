@@ -16,6 +16,8 @@ M0E1系列模组数据手册:[点击查看](http://mqlinks.tpddns.cn:1888/kodexp
 
 AT透传MQTT固件：[点击查看](/WIFI/M0E1_ESP8266/MQTT)
 
+AT+HTTP固件：[点击查看](/WIFI/M0E1_ESP8266/AT_HTTP)
+
 ESP8266官文档整理:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=zsTHje6Y)
 
 相关工具下载:[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=Di6XTcsn)
