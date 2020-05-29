@@ -7,6 +7,11 @@
 **MQTT版本固件下载地址：[点击查看](http://mqlinks.tpddns.cn:1888/kodexplorer/index.php?share/folder&user=100&sid=IfrKCUMb)**
 
 ## 二.版本说明
+## 发布日期:2020.5.30 版本号:3.0.0.036
+1.增加一些品牌手机的AP配网能力。
+2.增加在异常情况下的处理能力。
+
+
 ## 发布日期:2020.5.4 版本号:3.0.0.035
 1.增加MQTT发送成功AT指令：AT+MMOK。
 
